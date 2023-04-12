@@ -3,9 +3,9 @@
 # Paper: https://arxiv.org/pdf/2004.01241.pdf  
 """
 import tensorflow as tf
-from keras.models import Input, Model
+from keras.models import Model
 from keras.layers.convolutional import UpSampling2D, Conv2D
-from keras.layers import BatchNormalization, Activation, MaxPooling2D
+from tensorflow.keras.layers import  Input,  BatchNormalization, Activation, MaxPooling2D
 from keras.layers import add, Lambda, Concatenate, ZeroPadding2D
 from keras.optimizers import Adam, SGD
 from keras.applications.vgg16 import VGG16
@@ -126,6 +126,8 @@ class SUIM_Net():
         self.lr0 = 1e-4 
         self.inp_shape = (im_res[1], im_res[0])
         self.img_shape = (im_res[1], im_res[0], 3)
+        print(base)
+        print(im_res)
         if base=='RSB':
             self.model = self.get_model_RSB(n_classes)
             self.model.compile(optimizer = Adam(lr = self.lr0), 
@@ -140,7 +142,7 @@ class SUIM_Net():
     def get_model_RSB(self, n_classes):
         img_input, features = Suim_Encoder_RSB(self.inp_shape, channels=3)
         out = Suim_Decoder_RSB(features, n_classes) 
-        return Model(input=img_input, output=out)
+        return Model(img_input,out)
 
     def get_model_VGG16(self, n_classes):
         vgg = VGG16(input_shape=self.img_shape, include_top=False, weights='imagenet')
@@ -163,6 +165,6 @@ class SUIM_Net():
 
 
 if __name__=="__main__":
-    suim_net = SUIM_Net('VGG', im_res=(320, 256, 3))
-    #print (suim_net.model.summary())
+    suim_net = SUIM_Net('RSB', im_res=(320, 240, 3))
+    print (suim_net.model.summary())
 

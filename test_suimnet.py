@@ -15,10 +15,11 @@ from utils.data_utils import getPaths
 
 ## experiment directories
 #test_dir = "/mnt/data1/ImageSeg/suim/TEST/images/"
-test_dir = "data/test/images/"
+test_dir = "data/test/images/frontyard_2"
 
 ## sample and ckpt dir
 samples_dir = "data/test/output/"
+eval_dir = "data/test/output/eval_frontyard/frontyard_2/eval_vgg/"
 RO_dir = samples_dir + "RO/"
 FB_dir = samples_dir + "FV/"
 WR_dir = samples_dir + "WR/"
@@ -55,15 +56,29 @@ def testGenerator():
         img = Image.open(p).resize((im_w, im_h))
         img = np.array(img)/255.
         img = np.expand_dims(img, axis=0)
+        
         # inference
         out_img = model.predict(img)
         # thresholding
         out_img[out_img>0.5] = 1.
         out_img[out_img<=0.5] = 0.
         print ("tested: {0}".format(p))
+        #visualize 
+        m=np.array(out_img[0,:,:,0])
+        m = m+ np.array(out_img[0,:,:,1])
+        m = m+ np.array(out_img[0,:,:,2])
+        m = m+ np.array(out_img[0,:,:,3])
+        m = m+ np.array(out_img[0,:,:,4])
+        m[m>0.5] = 1.
+        m[m<=0.5] = 0.
+        
+        print(np.shape(m))
+
+        
         # get filename
         img_name = ntpath.basename(p).split('.')[0] + '.bmp'
         # save individual output masks
+        Image.fromarray(np.uint8(m*255)).save(eval_dir+img_name)
         ROs = np.reshape(out_img[0,:,:,0], (im_h, im_w))
         FVs = np.reshape(out_img[0,:,:,1], (im_h, im_w))
         HDs = np.reshape(out_img[0,:,:,2], (im_h, im_w))
