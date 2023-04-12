@@ -122,7 +122,7 @@ class SUIM_Net():
         - base = 'RSB' for RSB-based encoder (Fig. 5b)
         - base = 'VGG' for 12-layer VGG-16 encoder (Fig. 5c)
     """
-    def __init__(self, base='RSB', im_res=(320, 240, 3), n_classes=5):
+    def __init__(self, base='RSB', im_res=(320, 240, 3), n_classes=2):
         self.lr0 = 1e-4 
         self.inp_shape = (im_res[1], im_res[0])
         self.img_shape = (im_res[1], im_res[0], 3)

@@ -13,14 +13,14 @@ from utils.data_utils import trainDataGenerator
 
 ## dataset directory
 dataset_name = "suim"
-train_dir = "/mnt/data1/ImageSeg/suim/train_val/"
+train_dir = "data/train_val/"
 
 ## ckpt directory
 ckpt_dir = "ckpt/"
-base_ = 'VGG' # or 'RSB'
+base_ = 'RSB' # or 'RSB'
 if base_=='RSB':
     im_res_ = (320, 240, 3) 
-    ckpt_name = "suimnet_rsb.hdf5"
+    ckpt_name = "suimnet_rsb_n2.hdf5"
 else: 
     im_res_ = (320, 256, 3)
     ckpt_name = "suimnet_vgg.hdf5"
@@ -28,11 +28,11 @@ model_ckpt_name = join(ckpt_dir, ckpt_name)
 if not exists(ckpt_dir): os.makedirs(ckpt_dir)
 
 ## initialize model
-suimnet = SUIM_Net(base=base_, im_res=im_res_, n_classes=5)
+suimnet = SUIM_Net(base=base_, im_res=im_res_, n_classes=2)
 model = suimnet.model
 print (model.summary())
 ## load saved model
-#model.load_weights(join("ckpt/saved/", "***.hdf5"))
+# model.load_weights(join("ckpt/saved/", "suimnet_rsb2.hdf5"))
 
 
 batch_size = 8
@@ -64,7 +64,7 @@ train_gen = trainDataGenerator(batch_size, # batch_size
 
 ## fit model
 model.fit_generator(train_gen, 
-                    steps_per_epoch = 5000,
+                    steps_per_epoch = 5,
                     epochs = num_epochs,
                     callbacks = [model_checkpoint])
 

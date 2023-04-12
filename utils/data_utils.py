@@ -77,9 +77,15 @@ def getSaliency(mask):
             elif (mask[i,j,0]==1 and mask[i,j,1]==0 and mask[i,j,2]==0):
                 sal[i, j] = 1  
             elif (mask[i,j,0]==1 and mask[i,j,1]==1 and mask[i,j,2]==0):
-                sal[i, j] = 1   
+                sal[i, j] = 0   
             elif (mask[i,j,0]==0 and mask[i,j,1]==1 and mask[i,j,2]==1):
-                sal[i, j] = 0.8  
+                sal[i, j] = 1  
+            elif (mask[i,j,0]==0 and mask[i,j,1]==1 and mask[i,j,2]==0):
+                sal[i, j] = 1  
+            elif (mask[i,j,0]==1 and mask[i,j,1]==0 and mask[i,j,2]==1):
+                sal[i, j] = 1  
+            elif (mask[i,j,0]==1 and mask[i,j,1]==1 and mask[i,j,2]==1):
+                sal[i, j] = 1  
             else: pass
     return np.expand_dims(sal, axis=-1) 
 
@@ -102,7 +108,7 @@ def processSUIMDataRFHW(img, mask, sal=False):
 
 
 def trainDataGenerator(batch_size, train_path, image_folder, mask_folder, aug_dict, image_color_mode="grayscale",
-                    mask_color_mode="grayscale", target_size=(256,256), sal=False):
+                    mask_color_mode="grayscale", target_size=(256,256), sal=True):
     # data generator function for driving the training
     image_datagen = ImageDataGenerator(**aug_dict)
     image_generator = image_datagen.flow_from_directory(
@@ -128,7 +134,7 @@ def trainDataGenerator(batch_size, train_path, image_folder, mask_folder, aug_di
         save_prefix  = "mask",
         seed = 1)
     # make pairs and return
-    for (img, mask) in it.izip(image_generator, mask_generator):
+    for (img, mask) in zip(image_generator, mask_generator):
         img, mask_indiv = processSUIMDataRFHW(img, mask, sal)
         yield (img, mask_indiv)
 

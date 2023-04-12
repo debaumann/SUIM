@@ -15,11 +15,11 @@ from utils.data_utils import getPaths
 
 ## experiment directories
 #test_dir = "/mnt/data1/ImageSeg/suim/TEST/images/"
-test_dir = "data/test/images/frontyard_2"
+test_dir = "data/test/images/italy"
 
 ## sample and ckpt dir
 samples_dir = "data/test/output/"
-eval_dir = "data/test/output/eval_frontyard/frontyard_2/eval_vgg/"
+eval_dir = "data/test/output/eval_rsb_2/"
 RO_dir = samples_dir + "RO/"
 FB_dir = samples_dir + "FV/"
 WR_dir = samples_dir + "WR/"
@@ -33,14 +33,14 @@ if not exists(HD_dir): os.makedirs(HD_dir)
 if not exists(RI_dir): os.makedirs(RI_dir)
 
 ## input/output shapes
-base_ = 'VGG' # or 'RSB'
+base_ = 'RSB' # or 'RSB'
 if base_=='RSB':
     im_res_ = (320, 240, 3) 
-    ckpt_name = "suimnet_rsb5.hdf5"
+    ckpt_name = "suimnet_rsb_n2.hdf5"
 else: 
     im_res_ = (320, 256, 3)
     ckpt_name = "suimnet_vgg5.hdf5"
-suimnet = SUIM_Net(base=base_, im_res=im_res_, n_classes=5)
+suimnet = SUIM_Net(base=base_, im_res=im_res_, n_classes=2)
 model = suimnet.model
 print (model.summary())
 model.load_weights(join("ckpt/saved/", ckpt_name))
@@ -66,9 +66,9 @@ def testGenerator():
         #visualize 
         m=np.array(out_img[0,:,:,0])
         m = m+ np.array(out_img[0,:,:,1])
-        m = m+ np.array(out_img[0,:,:,2])
-        m = m+ np.array(out_img[0,:,:,3])
-        m = m+ np.array(out_img[0,:,:,4])
+        # m = m+ np.array(out_img[0,:,:,2])
+        # m = m+ np.array(out_img[0,:,:,3])
+        # m = m+ np.array(out_img[0,:,:,4])
         m[m>0.5] = 1.
         m[m<=0.5] = 0.
         
@@ -79,16 +79,16 @@ def testGenerator():
         img_name = ntpath.basename(p).split('.')[0] + '.bmp'
         # save individual output masks
         Image.fromarray(np.uint8(m*255)).save(eval_dir+img_name)
-        ROs = np.reshape(out_img[0,:,:,0], (im_h, im_w))
-        FVs = np.reshape(out_img[0,:,:,1], (im_h, im_w))
-        HDs = np.reshape(out_img[0,:,:,2], (im_h, im_w))
-        RIs = np.reshape(out_img[0,:,:,3], (im_h, im_w))
-        WRs = np.reshape(out_img[0,:,:,4], (im_h, im_w))
-        Image.fromarray(np.uint8(ROs*255.)).save(RO_dir+img_name)
-        Image.fromarray(np.uint8(FVs*255.)).save(FB_dir+img_name)
-        Image.fromarray(np.uint8(HDs*255.)).save(HD_dir+img_name)
-        Image.fromarray(np.uint8(RIs*255.)).save(RI_dir+img_name)
-        Image.fromarray(np.uint8(WRs*255.)).save(WR_dir+img_name)
+        # ROs = np.reshape(out_img[0,:,:,0], (im_h, im_w))
+        # FVs = np.reshape(out_img[0,:,:,1], (im_h, im_w))
+        # HDs = np.reshape(out_img[0,:,:,2], (im_h, im_w))
+        # RIs = np.reshape(out_img[0,:,:,3], (im_h, im_w))
+        # WRs = np.reshape(out_img[0,:,:,4], (im_h, im_w))
+        # Image.fromarray(np.uint8(ROs*255.)).save(RO_dir+img_name)
+        # Image.fromarray(np.uint8(FVs*255.)).save(FB_dir+img_name)
+        # Image.fromarray(np.uint8(HDs*255.)).save(HD_dir+img_name)
+        # Image.fromarray(np.uint8(RIs*255.)).save(RI_dir+img_name)
+        # Image.fromarray(np.uint8(WRs*255.)).save(WR_dir+img_name)
 
 # test images
 testGenerator()
