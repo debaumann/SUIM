@@ -36,7 +36,7 @@ if not exists(RI_dir): os.makedirs(RI_dir)
 base_ = 'RSB' # or 'RSB'
 if base_=='RSB':
     im_res_ = (320, 240, 3) 
-    ckpt_name = "suimnet_rsb_n2.hdf5"
+    ckpt_name = "suimnet_guggus.hdf5"
 else: 
     im_res_ = (320, 256, 3)
     ckpt_name = "suimnet_vgg5.hdf5"

@@ -1,0 +1,221 @@
+2023-04-14 18:33:14,364 INFO    StreamThr :40685 [internal.py:wandb_internal():86] W&B internal server running at pid: 40685, started at: 2023-04-14 18:33:14.364651
+2023-04-14 18:33:14,365 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status
+2023-04-14 18:33:14,366 INFO    WriterThread:40685 [datastore.py:open_for_write():85] open: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/run-9gaypuhg.wandb
+2023-04-14 18:33:14,367 DEBUG   SenderThread:40685 [sender.py:send():375] send: header
+2023-04-14 18:33:14,367 DEBUG   SenderThread:40685 [sender.py:send():375] send: run
+2023-04-14 18:33:14,690 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: check_version
+2023-04-14 18:33:14,691 INFO    SenderThread:40685 [dir_watcher.py:__init__():219] watching files in: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files
+2023-04-14 18:33:14,692 INFO    SenderThread:40685 [sender.py:_start_run_threads():1124] run started: 9gaypuhg with start time 1681489994.363882
+2023-04-14 18:33:14,692 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: summary_record
+2023-04-14 18:33:14,692 INFO    SenderThread:40685 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-14 18:33:14,692 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: check_version
+2023-04-14 18:33:14,757 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: run_start
+2023-04-14 18:33:15,364 DEBUG   HandlerThread:40685 [system_info.py:__init__():31] System info init
+2023-04-14 18:33:15,364 DEBUG   HandlerThread:40685 [system_info.py:__init__():46] System info init done
+2023-04-14 18:33:15,364 INFO    HandlerThread:40685 [system_monitor.py:start():181] Starting system monitor
+2023-04-14 18:33:15,364 INFO    SystemMonitor:40685 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-04-14 18:33:15,364 INFO    HandlerThread:40685 [system_monitor.py:probe():201] Collecting system info
+2023-04-14 18:33:15,365 INFO    SystemMonitor:40685 [interfaces.py:start():190] Started cpu monitoring
+2023-04-14 18:33:15,365 INFO    SystemMonitor:40685 [interfaces.py:start():190] Started disk monitoring
+2023-04-14 18:33:15,365 INFO    SystemMonitor:40685 [interfaces.py:start():190] Started gpu monitoring
+2023-04-14 18:33:15,366 INFO    SystemMonitor:40685 [interfaces.py:start():190] Started memory monitoring
+2023-04-14 18:33:15,366 INFO    SystemMonitor:40685 [interfaces.py:start():190] Started network monitoring
+2023-04-14 18:33:15,387 DEBUG   HandlerThread:40685 [system_info.py:probe():195] Probing system
+2023-04-14 18:33:15,387 DEBUG   HandlerThread:40685 [system_info.py:_probe_git():180] Probing git
+2023-04-14 18:33:15,391 DEBUG   HandlerThread:40685 [system_info.py:_probe_git():188] Probing git done
+2023-04-14 18:33:15,391 DEBUG   HandlerThread:40685 [system_info.py:probe():240] Probing system done
+2023-04-14 18:33:15,391 DEBUG   HandlerThread:40685 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-46-generic-x86_64-with-glibc2.31', 'python': '3.10.9', 'heartbeatAt': '2023-04-14T16:33:15.387585', 'startedAt': '2023-04-14T16:33:14.359753', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/boostfish/SUIM/train_suimnet.py', 'codePath': 'train_suimnet.py', 'git': {'remote': 'git@github.com:debaumann/SUIM.git', 'commit': '5f2ce185a64bffb546617b1b2c25d20f2dbf92bd'}, 'email': None, 'root': '/home/boostfish/SUIM', 'host': 'boostfish', 'username': 'boostfish', 'executable': '/home/boostfish/miniconda3/bin/python3', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2431.53375, 'min': 2200.0, 'max': 3700.0}, 'cpu_freq_per_core': [{'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2878.405, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2800.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 3700.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}], 'disk': {'total': 915.3232879638672, 'used': 22.5692138671875}, 'gpu': 'NVIDIA GeForce RTX 2070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070', 'memory_total': 8589934592}], 'memory': {'total': 15.544548034667969}}
+2023-04-14 18:33:15,391 INFO    HandlerThread:40685 [system_monitor.py:probe():211] Finished collecting system info
+2023-04-14 18:33:15,391 INFO    HandlerThread:40685 [system_monitor.py:probe():214] Publishing system info
+2023-04-14 18:33:15,391 DEBUG   HandlerThread:40685 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-14 18:33:15,391 DEBUG   HandlerThread:40685 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-14 18:33:15,391 DEBUG   HandlerThread:40685 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-14 18:33:15,692 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/wandb-summary.json
+2023-04-14 18:33:15,692 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/conda-environment.yaml
+2023-04-14 18:33:15,692 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/requirements.txt
+2023-04-14 18:33:16,690 DEBUG   HandlerThread:40685 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-14 18:33:16,690 INFO    HandlerThread:40685 [system_monitor.py:probe():216] Finished publishing system info
+2023-04-14 18:33:16,693 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/conda-environment.yaml
+2023-04-14 18:33:16,693 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/wandb-metadata.json
+2023-04-14 18:33:16,695 DEBUG   SenderThread:40685 [sender.py:send():375] send: files
+2023-04-14 18:33:16,695 INFO    SenderThread:40685 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-04-14 18:33:16,698 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-14 18:33:16,699 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: stop_status
+2023-04-14 18:33:16,841 DEBUG   SenderThread:40685 [sender.py:send():375] send: telemetry
+2023-04-14 18:33:17,152 INFO    wandb-upload_0:40685 [upload_job.py:push():137] Uploaded file /tmp/tmprdu2t_9swandb/l5jwyggf-wandb-metadata.json
+2023-04-14 18:33:17,524 DEBUG   SenderThread:40685 [sender.py:send():375] send: telemetry
+2023-04-14 18:33:17,524 DEBUG   SenderThread:40685 [sender.py:send():375] send: metric
+2023-04-14 18:33:17,524 DEBUG   SenderThread:40685 [sender.py:send():375] send: telemetry
+2023-04-14 18:33:17,524 DEBUG   SenderThread:40685 [sender.py:send():375] send: metric
+2023-04-14 18:33:17,524 WARNING SenderThread:40685 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-04-14 18:33:17,693 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:33:19,547 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:33:19,694 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:33:25,383 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:33:25,695 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:33:30,383 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:33:31,764 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-14 18:33:31,764 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: stop_status
+2023-04-14 18:33:35,911 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:33:37,697 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:33:39,698 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:33:41,426 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:33:45,699 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:33:46,504 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:33:46,699 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/config.yaml
+2023-04-14 18:33:46,805 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-14 18:33:46,805 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: stop_status
+2023-04-14 18:33:52,463 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:33:53,700 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:33:58,157 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:33:59,701 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:34:01,724 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-14 18:34:01,724 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: stop_status
+2023-04-14 18:34:03,760 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:34:05,703 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:34:08,760 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:34:13,704 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:34:14,119 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:34:15,366 DEBUG   SystemMonitor:40685 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-04-14 18:34:15,367 DEBUG   SenderThread:40685 [sender.py:send():375] send: stats
+2023-04-14 18:34:16,790 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-14 18:34:16,790 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: stop_status
+2023-04-14 18:34:19,693 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:34:19,705 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:34:25,328 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:34:25,706 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:34:30,329 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:34:31,825 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-14 18:34:31,825 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: stop_status
+2023-04-14 18:34:33,708 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:34:35,958 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:34:39,110 DEBUG   SenderThread:40685 [sender.py:send():375] send: exit
+2023-04-14 18:34:39,110 INFO    SenderThread:40685 [sender.py:send_exit():598] handling exit code: 255
+2023-04-14 18:34:39,110 INFO    SenderThread:40685 [sender.py:send_exit():600] handling runtime: 84
+2023-04-14 18:34:39,111 INFO    SenderThread:40685 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-14 18:34:39,111 INFO    SenderThread:40685 [sender.py:send_exit():606] send defer
+2023-04-14 18:34:39,111 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:39,111 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 0
+2023-04-14 18:34:39,111 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:39,111 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-04-14 18:34:39,111 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 1
+2023-04-14 18:34:39,112 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:39,112 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 1
+2023-04-14 18:34:39,112 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:39,112 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-04-14 18:34:39,112 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 2
+2023-04-14 18:34:39,112 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:39,112 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 2
+2023-04-14 18:34:39,112 INFO    HandlerThread:40685 [system_monitor.py:finish():190] Stopping system monitor
+2023-04-14 18:34:39,112 DEBUG   SystemMonitor:40685 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-04-14 18:34:39,112 INFO    HandlerThread:40685 [interfaces.py:finish():202] Joined cpu monitor
+2023-04-14 18:34:39,112 DEBUG   SystemMonitor:40685 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-04-14 18:34:39,112 INFO    HandlerThread:40685 [interfaces.py:finish():202] Joined disk monitor
+2023-04-14 18:34:39,137 INFO    HandlerThread:40685 [interfaces.py:finish():202] Joined gpu monitor
+2023-04-14 18:34:39,137 INFO    HandlerThread:40685 [interfaces.py:finish():202] Joined memory monitor
+2023-04-14 18:34:39,137 INFO    HandlerThread:40685 [interfaces.py:finish():202] Joined network monitor
+2023-04-14 18:34:39,137 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:39,138 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-04-14 18:34:39,138 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 3
+2023-04-14 18:34:39,138 DEBUG   SenderThread:40685 [sender.py:send():375] send: stats
+2023-04-14 18:34:39,138 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:39,138 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 3
+2023-04-14 18:34:39,138 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:39,138 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-04-14 18:34:39,138 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 4
+2023-04-14 18:34:39,138 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:39,138 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 4
+2023-04-14 18:34:39,138 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:39,138 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-04-14 18:34:39,138 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 5
+2023-04-14 18:34:39,138 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:39,138 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 5
+2023-04-14 18:34:39,138 DEBUG   SenderThread:40685 [sender.py:send():375] send: summary
+2023-04-14 18:34:39,138 INFO    SenderThread:40685 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-14 18:34:39,139 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:39,139 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-04-14 18:34:39,139 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 6
+2023-04-14 18:34:39,139 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:39,139 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 6
+2023-04-14 18:34:39,139 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:39,139 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-04-14 18:34:39,139 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 7
+2023-04-14 18:34:39,139 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: status_report
+2023-04-14 18:34:39,139 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:39,139 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 7
+2023-04-14 18:34:39,139 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:39,139 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-04-14 18:34:39,709 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/wandb-summary.json
+2023-04-14 18:34:40,110 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-14 18:34:40,709 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:34:41,949 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 8
+2023-04-14 18:34:41,949 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: poll_exit
+2023-04-14 18:34:41,949 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:41,949 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 8
+2023-04-14 18:34:41,950 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:41,950 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-04-14 18:34:41,961 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 9
+2023-04-14 18:34:41,961 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:41,961 DEBUG   SenderThread:40685 [sender.py:send():375] send: artifact
+2023-04-14 18:34:41,961 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 9
+2023-04-14 18:34:42,710 INFO    Thread-12 :40685 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:34:42,785 INFO    SenderThread:40685 [sender.py:send_artifact():1474] sent artifact job-git_github.com_debaumann_SUIM.git_train_suimnet.py - {'id': 'QXJ0aWZhY3Q6NDI0NDYxNTI1', 'digest': '90d01ec39096a977f9e2d6aa015e546c', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-git_github.com_debaumann_SUIM.git_train_suimnet.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-git_github.com_debaumann_SUIM.git_train_suimnet.py', 'alias': 'v3'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYyMzc2NzI1', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDI0NDYxNTI1', 'versionIndex': 3}}, 'version': 'v3'}
+2023-04-14 18:34:42,785 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:42,785 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-04-14 18:34:42,785 INFO    SenderThread:40685 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-04-14 18:34:43,710 INFO    SenderThread:40685 [dir_watcher.py:finish():395] scan: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files
+2023-04-14 18:34:43,710 INFO    SenderThread:40685 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/requirements.txt requirements.txt
+2023-04-14 18:34:43,710 INFO    SenderThread:40685 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/conda-environment.yaml conda-environment.yaml
+2023-04-14 18:34:43,710 INFO    SenderThread:40685 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/config.yaml config.yaml
+2023-04-14 18:34:43,712 INFO    SenderThread:40685 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log output.log
+2023-04-14 18:34:43,712 INFO    SenderThread:40685 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/wandb-summary.json wandb-summary.json
+2023-04-14 18:34:43,712 INFO    SenderThread:40685 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/wandb-metadata.json wandb-metadata.json
+2023-04-14 18:34:43,712 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 10
+2023-04-14 18:34:43,715 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:43,716 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 10
+2023-04-14 18:34:43,718 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:43,718 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-04-14 18:34:43,718 INFO    SenderThread:40685 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-14 18:34:44,152 INFO    wandb-upload_2:40685 [upload_job.py:push():137] Uploaded file /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/config.yaml
+2023-04-14 18:34:44,196 INFO    wandb-upload_3:40685 [upload_job.py:push():137] Uploaded file /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/output.log
+2023-04-14 18:34:44,207 INFO    wandb-upload_4:40685 [upload_job.py:push():137] Uploaded file /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/wandb-summary.json
+2023-04-14 18:34:44,231 INFO    wandb-upload_0:40685 [upload_job.py:push():137] Uploaded file /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/requirements.txt
+2023-04-14 18:34:44,233 INFO    wandb-upload_1:40685 [upload_job.py:push():137] Uploaded file /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/files/conda-environment.yaml
+2023-04-14 18:34:44,433 INFO    Thread-11 (_thread_body):40685 [sender.py:transition_state():626] send defer: 11
+2023-04-14 18:34:44,433 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:44,433 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 11
+2023-04-14 18:34:44,434 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:44,434 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-04-14 18:34:44,434 INFO    SenderThread:40685 [file_pusher.py:join():173] waiting for file pusher
+2023-04-14 18:34:44,434 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 12
+2023-04-14 18:34:44,434 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:44,434 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 12
+2023-04-14 18:34:44,434 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:44,434 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-04-14 18:34:44,924 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 13
+2023-04-14 18:34:44,925 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:44,925 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 13
+2023-04-14 18:34:44,925 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:44,925 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-04-14 18:34:44,925 INFO    SenderThread:40685 [sender.py:transition_state():626] send defer: 14
+2023-04-14 18:34:44,925 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: defer
+2023-04-14 18:34:44,925 INFO    HandlerThread:40685 [handler.py:handle_request_defer():170] handle defer: 14
+2023-04-14 18:34:44,926 DEBUG   SenderThread:40685 [sender.py:send():375] send: final
+2023-04-14 18:34:44,926 DEBUG   SenderThread:40685 [sender.py:send():375] send: footer
+2023-04-14 18:34:44,926 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: defer
+2023-04-14 18:34:44,926 INFO    SenderThread:40685 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-04-14 18:34:44,926 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-14 18:34:44,926 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: poll_exit
+2023-04-14 18:34:44,927 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: server_info
+2023-04-14 18:34:44,927 DEBUG   SenderThread:40685 [sender.py:send_request():402] send_request: server_info
+2023-04-14 18:34:44,927 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: get_summary
+2023-04-14 18:34:44,929 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: sampled_history
+2023-04-14 18:34:45,071 INFO    MainThread:40685 [wandb_run.py:_footer_history_summary_info():3476] rendering history
+2023-04-14 18:34:45,071 INFO    MainThread:40685 [wandb_run.py:_footer_history_summary_info():3508] rendering summary
+2023-04-14 18:34:45,071 INFO    MainThread:40685 [wandb_run.py:_footer_sync_info():3434] logging synced files
+2023-04-14 18:34:45,071 DEBUG   HandlerThread:40685 [handler.py:handle_request():144] handle_request: shutdown
+2023-04-14 18:34:45,071 INFO    HandlerThread:40685 [handler.py:finish():845] shutting down handler
+2023-04-14 18:34:45,927 INFO    WriterThread:40685 [datastore.py:close():298] close: /home/boostfish/SUIM/wandb/run-20230414_183314-9gaypuhg/run-9gaypuhg.wandb
+2023-04-14 18:34:46,071 INFO    SenderThread:40685 [sender.py:finish():1550] shutting down sender
+2023-04-14 18:34:46,071 INFO    SenderThread:40685 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-14 18:34:46,071 INFO    SenderThread:40685 [file_pusher.py:join():173] waiting for file pusher

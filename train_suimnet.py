@@ -10,7 +10,11 @@ from keras import callbacks
 # local libs
 from models.suim_net import SUIM_Net
 from utils.data_utils import trainDataGenerator
+#wandb stuff
+import wandb
+from wandb.keras import WandbMetricsLogger
 
+wandb.init(config={"bs":12})
 ## dataset directory
 dataset_name = "suim"
 train_dir = "data/train_val/"
@@ -20,7 +24,7 @@ ckpt_dir = "ckpt/"
 base_ = 'RSB' # or 'RSB'
 if base_=='RSB':
     im_res_ = (320, 240, 3) 
-    ckpt_name = "suimnet_rsb_n2.hdf5"
+    ckpt_name = "suimnet_rsb_500_24_lr_001.hdf5"
 else: 
     im_res_ = (320, 256, 3)
     ckpt_name = "suimnet_vgg.hdf5"
@@ -28,6 +32,7 @@ model_ckpt_name = join(ckpt_dir, ckpt_name)
 if not exists(ckpt_dir): os.makedirs(ckpt_dir)
 
 ## initialize model
+steps_per_epoch = 500,
 suimnet = SUIM_Net(base=base_, im_res=im_res_, n_classes=2)
 model = suimnet.model
 print (model.summary())
@@ -63,8 +68,8 @@ train_gen = trainDataGenerator(batch_size, # batch_size
                               target_size = (im_res_[1], im_res_[0]))
 
 ## fit model
-model.fit_generator(train_gen, 
-                    steps_per_epoch = 5,
+model.fit(train_gen, 
+                    steps_per_epoch = 500,
                     epochs = num_epochs,
-                    callbacks = [model_checkpoint])
+                    callbacks = [model_checkpoint,WandbMetricsLogger()])
 
