@@ -19,7 +19,7 @@ test_dir = "data/test/images/italy"
 
 ## sample and ckpt dir
 samples_dir = "data/test/output/"
-eval_dir = "data/test/output/eval_rsb_2/"
+eval_dir = "data/test/output/eval_run_lr001/"
 RO_dir = samples_dir + "RO/"
 FB_dir = samples_dir + "FV/"
 WR_dir = samples_dir + "WR/"
@@ -36,7 +36,7 @@ if not exists(RI_dir): os.makedirs(RI_dir)
 base_ = 'RSB' # or 'RSB'
 if base_=='RSB':
     im_res_ = (320, 240, 3) 
-    ckpt_name = "suimnet_guggus.hdf5"
+    ckpt_name = "suimnet_rsb_500_24_lr_001.hdf5"
 else: 
     im_res_ = (320, 256, 3)
     ckpt_name = "suimnet_vgg5.hdf5"
@@ -64,6 +64,7 @@ def testGenerator():
         out_img[out_img<=0.5] = 0.
         print ("tested: {0}".format(p))
         #visualize 
+        print(np.shape(out_img))
         m=np.array(out_img[0,:,:,0])
         m = m+ np.array(out_img[0,:,:,1])
         # m = m+ np.array(out_img[0,:,:,2])

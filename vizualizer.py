@@ -7,7 +7,7 @@ from pathlib import Path
 
 
 test_dir = "data/test/images/italy/"
-eval_rsb= "data/test/output/eval_rsb_2/"
+eval_rsb= "data/test/output/eval_run_lr001/"
 # eval_vgg= "data/test/output/eval_frontyard/frontyard_4/eval_vgg/"
 
 len = (len([entry for entry in os.listdir(test_dir) if os.path.isfile(os.path.join(test_dir, entry))]))

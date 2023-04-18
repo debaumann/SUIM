@@ -1,0 +1,1164 @@
+2023-04-17 20:23:52,486 INFO    StreamThr :27316 [internal.py:wandb_internal():86] W&B internal server running at pid: 27316, started at: 2023-04-17 20:23:52.485641
+2023-04-17 20:23:52,487 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status
+2023-04-17 20:23:52,489 INFO    WriterThread:27316 [datastore.py:open_for_write():85] open: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/run-4xwrwwmh.wandb
+2023-04-17 20:23:52,491 DEBUG   SenderThread:27316 [sender.py:send():375] send: header
+2023-04-17 20:23:52,493 DEBUG   SenderThread:27316 [sender.py:send():375] send: run
+2023-04-17 20:23:52,995 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: check_version
+2023-04-17 20:23:52,997 INFO    SenderThread:27316 [dir_watcher.py:__init__():219] watching files in: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files
+2023-04-17 20:23:52,997 INFO    SenderThread:27316 [sender.py:_start_run_threads():1124] run started: 4xwrwwmh with start time 1681755832.48486
+2023-04-17 20:23:52,998 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:23:52,998 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:23:52,998 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: check_version
+2023-04-17 20:23:53,099 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: run_start
+2023-04-17 20:23:54,000 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:23:54,101 ERROR   HandlerThread:27316 [gpu.py:is_available():339] Error initializing NVML: Driver Not Loaded
+2023-04-17 20:23:54,102 DEBUG   HandlerThread:27316 [system_info.py:__init__():31] System info init
+2023-04-17 20:23:54,102 DEBUG   HandlerThread:27316 [system_info.py:__init__():46] System info init done
+2023-04-17 20:23:54,102 INFO    HandlerThread:27316 [system_monitor.py:start():181] Starting system monitor
+2023-04-17 20:23:54,102 INFO    SystemMonitor:27316 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-04-17 20:23:54,102 INFO    HandlerThread:27316 [system_monitor.py:probe():201] Collecting system info
+2023-04-17 20:23:54,103 INFO    SystemMonitor:27316 [interfaces.py:start():190] Started cpu monitoring
+2023-04-17 20:23:54,103 INFO    SystemMonitor:27316 [interfaces.py:start():190] Started disk monitoring
+2023-04-17 20:23:54,104 INFO    SystemMonitor:27316 [interfaces.py:start():190] Started memory monitoring
+2023-04-17 20:23:54,104 INFO    SystemMonitor:27316 [interfaces.py:start():190] Started network monitoring
+2023-04-17 20:23:54,130 DEBUG   HandlerThread:27316 [system_info.py:probe():195] Probing system
+2023-04-17 20:23:54,131 DEBUG   HandlerThread:27316 [system_info.py:_probe_git():180] Probing git
+2023-04-17 20:23:54,139 DEBUG   HandlerThread:27316 [system_info.py:_probe_git():188] Probing git done
+2023-04-17 20:23:54,139 DEBUG   HandlerThread:27316 [system_info.py:probe():240] Probing system done
+2023-04-17 20:23:54,139 DEBUG   HandlerThread:27316 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-46-generic-x86_64-with-glibc2.31', 'python': '3.10.9', 'heartbeatAt': '2023-04-17T18:23:54.130573', 'startedAt': '2023-04-17T18:23:52.475601', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/boostfish/SUIM/train_suimnet.py', 'codePath': 'train_suimnet.py', 'git': {'remote': 'git@github.com:debaumann/SUIM.git', 'commit': '2f0ce048ddc9647207da5ffebc36c60512ce8c67'}, 'email': 'debaumann@student.ethz.ch', 'root': '/home/boostfish/SUIM', 'host': 'boostfish', 'username': 'boostfish', 'executable': '/home/boostfish/miniconda3/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2648.690375, 'min': 400.0, 'max': 4200.0}, 'cpu_freq_per_core': [{'current': 3438.844, 'min': 400.0, 'max': 4200.0}, {'current': 2400.0, 'min': 400.0, 'max': 4200.0}, {'current': 2400.0, 'min': 400.0, 'max': 4200.0}, {'current': 2400.0, 'min': 400.0, 'max': 4200.0}, {'current': 2400.0, 'min': 400.0, 'max': 4200.0}, {'current': 2400.0, 'min': 400.0, 'max': 4200.0}, {'current': 2400.0, 'min': 400.0, 'max': 4200.0}, {'current': 2400.0, 'min': 400.0, 'max': 4200.0}], 'disk': {'total': 915.3232879638672, 'used': 23.675098419189453}, 'memory': {'total': 15.29031753540039}}
+2023-04-17 20:23:54,139 INFO    HandlerThread:27316 [system_monitor.py:probe():211] Finished collecting system info
+2023-04-17 20:23:54,139 INFO    HandlerThread:27316 [system_monitor.py:probe():214] Publishing system info
+2023-04-17 20:23:54,139 DEBUG   HandlerThread:27316 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-04-17 20:23:54,139 DEBUG   HandlerThread:27316 [system_info.py:_save_pip():67] Saving pip packages done
+2023-04-17 20:23:54,139 DEBUG   HandlerThread:27316 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-04-17 20:23:54,999 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/requirements.txt
+2023-04-17 20:23:54,999 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/conda-environment.yaml
+2023-04-17 20:23:55,724 DEBUG   HandlerThread:27316 [system_info.py:_save_conda():86] Saving conda packages done
+2023-04-17 20:23:55,724 INFO    HandlerThread:27316 [system_monitor.py:probe():216] Finished publishing system info
+2023-04-17 20:23:55,727 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:23:55,727 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-04-17 20:23:55,731 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:23:55,731 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:23:55,953 DEBUG   SenderThread:27316 [sender.py:send():375] send: telemetry
+2023-04-17 20:23:56,000 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/conda-environment.yaml
+2023-04-17 20:23:56,000 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-metadata.json
+2023-04-17 20:23:56,000 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:23:56,380 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/tdjfw704-wandb-metadata.json
+2023-04-17 20:23:57,959 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:23:58,001 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:24:02,960 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:24:03,969 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: keepalive
+2023-04-17 20:24:04,560 DEBUG   SenderThread:27316 [sender.py:send():375] send: telemetry
+2023-04-17 20:24:04,561 DEBUG   SenderThread:27316 [sender.py:send():375] send: metric
+2023-04-17 20:24:04,561 DEBUG   SenderThread:27316 [sender.py:send():375] send: telemetry
+2023-04-17 20:24:04,561 DEBUG   SenderThread:27316 [sender.py:send():375] send: metric
+2023-04-17 20:24:04,561 WARNING SenderThread:27316 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-04-17 20:24:06,030 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:24:08,565 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:24:10,777 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:24:10,777 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:24:14,551 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:24:15,032 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:24:19,552 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:24:23,034 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:24:25,307 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:25,308 DEBUG   SenderThread:27316 [sender.py:send():375] send: metric
+2023-04-17 20:24:25,310 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:24:25,762 DEBUG   SenderThread:27316 [sender.py:send():375] send: metric
+2023-04-17 20:24:25,763 DEBUG   SenderThread:27316 [sender.py:send():375] send: metric
+2023-04-17 20:24:25,763 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:25,763 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:25,764 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:25,803 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:24:25,803 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:24:26,035 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:24:26,035 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/config.yaml
+2023-04-17 20:24:29,036 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:24:31,062 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:24:36,062 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:24:36,861 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:36,861 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:36,862 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_1_820acc889842c8e4fb0a.png with policy now
+2023-04-17 20:24:36,863 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:36,864 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:36,868 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:36,897 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:36,897 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:36,897 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_2_388764164455c081d8b5.png with policy now
+2023-04-17 20:24:36,898 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:36,898 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:36,898 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:36,916 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:36,916 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:36,917 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_3_f67d10041e5f82343d1d.png with policy now
+2023-04-17 20:24:36,917 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:36,917 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:36,917 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:36,940 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:36,940 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:36,940 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_4_4c0f92559074ab59a349.png with policy now
+2023-04-17 20:24:36,941 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:36,941 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:36,941 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:36,966 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:36,966 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:36,966 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_5_8ad5d2d61caed1c5ed86.png with policy now
+2023-04-17 20:24:36,967 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:36,967 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:36,967 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:36,990 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:36,991 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:36,991 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_6_648ad9312df9c92359bc.png with policy now
+2023-04-17 20:24:36,991 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:36,991 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:36,992 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:37,014 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:37,014 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:37,014 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_7_ae99d92d9ffb3c781f48.png with policy now
+2023-04-17 20:24:37,015 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:37,015 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:37,015 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:37,035 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:37,036 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:37,036 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_8_da1170da7bd6cd73ad19.png with policy now
+2023-04-17 20:24:37,036 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:37,037 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:37,037 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:37,040 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:24:37,040 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_7_ae99d92d9ffb3c781f48.png
+2023-04-17 20:24:37,040 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_1_820acc889842c8e4fb0a.png
+2023-04-17 20:24:37,041 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_3_f67d10041e5f82343d1d.png
+2023-04-17 20:24:37,041 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_6_648ad9312df9c92359bc.png
+2023-04-17 20:24:37,041 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_4_4c0f92559074ab59a349.png
+2023-04-17 20:24:37,041 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_5_8ad5d2d61caed1c5ed86.png
+2023-04-17 20:24:37,041 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_2_388764164455c081d8b5.png
+2023-04-17 20:24:37,041 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_8_da1170da7bd6cd73ad19.png
+2023-04-17 20:24:37,041 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images
+2023-04-17 20:24:37,041 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media
+2023-04-17 20:24:37,531 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/pgzty36t-media/images/prediction_4_4c0f92559074ab59a349.png
+2023-04-17 20:24:37,620 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/rzc2kkm6-media/images/prediction_2_388764164455c081d8b5.png
+2023-04-17 20:24:37,654 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/ltaqqh6r-media/images/prediction_3_f67d10041e5f82343d1d.png
+2023-04-17 20:24:37,709 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/2i3lvnj6-media/images/prediction_1_820acc889842c8e4fb0a.png
+2023-04-17 20:24:37,728 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/8ew6pwe8-media/images/prediction_6_648ad9312df9c92359bc.png
+2023-04-17 20:24:37,737 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/rid8m2jh-media/images/prediction_5_8ad5d2d61caed1c5ed86.png
+2023-04-17 20:24:37,755 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/b8bo7g3s-media/images/prediction_7_ae99d92d9ffb3c781f48.png
+2023-04-17 20:24:38,255 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/cw31fqbd-media/images/prediction_5_8ad5d2d61caed1c5ed86.png
+2023-04-17 20:24:38,256 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/e8kprrsr-media/images/prediction_3_f67d10041e5f82343d1d.png
+2023-04-17 20:24:38,256 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/a27i19ed-media/images/prediction_4_4c0f92559074ab59a349.png
+2023-04-17 20:24:38,256 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/45rty7lv-media/images/prediction_2_388764164455c081d8b5.png
+2023-04-17 20:24:38,860 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/j6ef26h3-media/images/prediction_1_820acc889842c8e4fb0a.png
+2023-04-17 20:24:38,860 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/0brq7hqj-media/images/prediction_6_648ad9312df9c92359bc.png
+2023-04-17 20:24:38,860 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/mf72okfm-media/images/prediction_7_ae99d92d9ffb3c781f48.png
+2023-04-17 20:24:39,041 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:24:40,762 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:24:40,762 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:24:41,907 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:24:42,549 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/pn5s55jq-media/images/prediction_8_da1170da7bd6cd73ad19.png
+2023-04-17 20:24:43,016 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/1uh99fd5-media/images/prediction_8_da1170da7bd6cd73ad19.png
+2023-04-17 20:24:47,044 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:24:47,114 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:24:48,796 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:48,797 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:48,797 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:48,798 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:49,045 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:24:52,799 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:24:54,104 DEBUG   SystemMonitor:27316 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-04-17 20:24:54,105 DEBUG   SenderThread:27316 [sender.py:send():375] send: stats
+2023-04-17 20:24:55,777 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:24:55,777 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:24:57,963 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:24:59,049 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/config.yaml
+2023-04-17 20:24:59,438 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:59,438 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:59,438 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_10_4f3b4468108df7d0464a.png with policy now
+2023-04-17 20:24:59,439 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:59,439 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:59,440 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:59,461 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:59,461 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:59,461 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_11_2ce03e022c9bcb3373a0.png with policy now
+2023-04-17 20:24:59,462 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:59,462 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:59,462 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:59,486 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:59,486 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:59,487 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_12_fcaeed990e5d284138de.png with policy now
+2023-04-17 20:24:59,487 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:59,487 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:59,487 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:59,515 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:59,515 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_13_88644f25fe0eb6f41af4.png with policy now
+2023-04-17 20:24:59,515 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:59,516 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:59,516 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:59,516 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:59,533 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:59,533 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:59,533 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_14_2c8290ba120940fdb5fc.png with policy now
+2023-04-17 20:24:59,534 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:59,534 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:59,534 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:59,555 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:59,556 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:59,556 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_15_9da564ad38a0df45e647.png with policy now
+2023-04-17 20:24:59,556 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:59,556 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:59,556 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:59,582 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:59,582 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:59,582 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_16_1fd7881f3b0c6ed7f6d8.png with policy now
+2023-04-17 20:24:59,583 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:59,583 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:59,583 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:59,603 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:24:59,603 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:24:59,604 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_17_45e3e4dcc4ce88107463.png with policy now
+2023-04-17 20:24:59,604 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:24:59,604 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:24:59,604 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:24:59,928 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/zr8gzury-media/images/prediction_10_4f3b4468108df7d0464a.png
+2023-04-17 20:25:00,032 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/fn8usftl-media/images/prediction_13_88644f25fe0eb6f41af4.png
+2023-04-17 20:25:00,037 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/mwj43n51-media/images/prediction_12_fcaeed990e5d284138de.png
+2023-04-17 20:25:00,050 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:25:00,050 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_10_4f3b4468108df7d0464a.png
+2023-04-17 20:25:00,051 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_13_88644f25fe0eb6f41af4.png
+2023-04-17 20:25:00,051 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_15_9da564ad38a0df45e647.png
+2023-04-17 20:25:00,051 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_16_1fd7881f3b0c6ed7f6d8.png
+2023-04-17 20:25:00,051 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_17_45e3e4dcc4ce88107463.png
+2023-04-17 20:25:00,051 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_11_2ce03e022c9bcb3373a0.png
+2023-04-17 20:25:00,052 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_14_2c8290ba120940fdb5fc.png
+2023-04-17 20:25:00,052 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_12_fcaeed990e5d284138de.png
+2023-04-17 20:25:00,052 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images
+2023-04-17 20:25:00,058 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/3nvgwjz7-media/images/prediction_14_2c8290ba120940fdb5fc.png
+2023-04-17 20:25:00,087 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/3qeu7gaj-media/images/prediction_11_2ce03e022c9bcb3373a0.png
+2023-04-17 20:25:00,173 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/m1c4104o-media/images/prediction_16_1fd7881f3b0c6ed7f6d8.png
+2023-04-17 20:25:00,189 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/3ul0ikym-media/images/prediction_15_9da564ad38a0df45e647.png
+2023-04-17 20:25:00,237 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/rbi1cmg1-media/images/prediction_17_45e3e4dcc4ce88107463.png
+2023-04-17 20:25:00,569 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/e38upqzq-media/images/prediction_13_88644f25fe0eb6f41af4.png
+2023-04-17 20:25:00,576 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/xqkl14me-media/images/prediction_10_4f3b4468108df7d0464a.png
+2023-04-17 20:25:00,596 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/k3i0r6hf-media/images/prediction_12_fcaeed990e5d284138de.png
+2023-04-17 20:25:00,688 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/g30q10ub-media/images/prediction_11_2ce03e022c9bcb3373a0.png
+2023-04-17 20:25:00,732 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/1mb8vpn6-media/images/prediction_14_2c8290ba120940fdb5fc.png
+2023-04-17 20:25:01,050 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:25:01,172 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/2gt9x1rx-media/images/prediction_15_9da564ad38a0df45e647.png
+2023-04-17 20:25:01,211 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/90unvfov-media/images/prediction_16_1fd7881f3b0c6ed7f6d8.png
+2023-04-17 20:25:01,367 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/fje60ow1-media/images/prediction_17_45e3e4dcc4ce88107463.png
+2023-04-17 20:25:03,605 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:25:07,227 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:07,227 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:07,228 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:07,228 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:08,056 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:25:09,056 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:25:09,228 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:25:10,795 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:25:10,796 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:25:15,013 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:25:20,014 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:25:21,265 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:21,266 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:21,266 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_19_a891e1dc1d37ffb2ab4b.png with policy now
+2023-04-17 20:25:21,267 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:21,267 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:21,267 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:21,293 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:21,293 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:21,294 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_20_0d4de270584710f1627e.png with policy now
+2023-04-17 20:25:21,294 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:21,294 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:21,294 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:21,316 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:21,317 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:21,317 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_21_f4d5ef25177ae2656722.png with policy now
+2023-04-17 20:25:21,317 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:21,317 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:21,318 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:21,340 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:21,340 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:21,340 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_22_008367488d5216dfbae0.png with policy now
+2023-04-17 20:25:21,341 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:21,341 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:21,341 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:21,367 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:21,367 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:21,367 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_23_24cc5e73a0dd141cf443.png with policy now
+2023-04-17 20:25:21,368 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:21,368 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:21,368 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:21,390 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:21,390 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:21,390 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_24_13997ff15531cedec3d8.png with policy now
+2023-04-17 20:25:21,390 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:21,391 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:21,391 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:21,411 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:21,412 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:21,412 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_25_488bf2f1552f283fa2d9.png with policy now
+2023-04-17 20:25:21,412 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:21,412 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:21,413 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:21,435 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:21,436 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:21,436 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_26_24aa0487a1bc8aacfea5.png with policy now
+2023-04-17 20:25:21,439 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:21,440 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:21,440 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:21,866 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/j3sb8nce-media/images/prediction_22_008367488d5216dfbae0.png
+2023-04-17 20:25:21,867 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/i3i0j33b-media/images/prediction_20_0d4de270584710f1627e.png
+2023-04-17 20:25:21,868 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/dyfpvcqc-media/images/prediction_21_f4d5ef25177ae2656722.png
+2023-04-17 20:25:21,948 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/ir1h0vya-media/images/prediction_26_24aa0487a1bc8aacfea5.png
+2023-04-17 20:25:21,959 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/7ds7d6g1-media/images/prediction_25_488bf2f1552f283fa2d9.png
+2023-04-17 20:25:22,018 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/dhamnbth-media/images/prediction_19_a891e1dc1d37ffb2ab4b.png
+2023-04-17 20:25:22,063 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:25:22,063 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_25_488bf2f1552f283fa2d9.png
+2023-04-17 20:25:22,063 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_20_0d4de270584710f1627e.png
+2023-04-17 20:25:22,064 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_26_24aa0487a1bc8aacfea5.png
+2023-04-17 20:25:22,064 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_24_13997ff15531cedec3d8.png
+2023-04-17 20:25:22,064 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_21_f4d5ef25177ae2656722.png
+2023-04-17 20:25:22,064 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_19_a891e1dc1d37ffb2ab4b.png
+2023-04-17 20:25:22,064 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_23_24cc5e73a0dd141cf443.png
+2023-04-17 20:25:22,064 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_22_008367488d5216dfbae0.png
+2023-04-17 20:25:22,064 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images
+2023-04-17 20:25:22,121 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/m49w3gz5-media/images/prediction_23_24cc5e73a0dd141cf443.png
+2023-04-17 20:25:22,140 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/apyn2u8o-media/images/prediction_24_13997ff15531cedec3d8.png
+2023-04-17 20:25:22,634 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/0va5m470-media/images/prediction_21_f4d5ef25177ae2656722.png
+2023-04-17 20:25:22,634 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/dc33not5-media/images/prediction_26_24aa0487a1bc8aacfea5.png
+2023-04-17 20:25:22,634 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/h6kkud85-media/images/prediction_25_488bf2f1552f283fa2d9.png
+2023-04-17 20:25:22,638 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/0du8rws5-media/images/prediction_19_a891e1dc1d37ffb2ab4b.png
+2023-04-17 20:25:22,643 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/yzt22erj-media/images/prediction_23_24cc5e73a0dd141cf443.png
+2023-04-17 20:25:22,673 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/vck6vgt7-media/images/prediction_20_0d4de270584710f1627e.png
+2023-04-17 20:25:22,728 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/pmlbvu5w-media/images/prediction_22_008367488d5216dfbae0.png
+2023-04-17 20:25:23,064 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:25:23,199 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/g2nwc53a-media/images/prediction_24_13997ff15531cedec3d8.png
+2023-04-17 20:25:24,106 DEBUG   SenderThread:27316 [sender.py:send():375] send: stats
+2023-04-17 20:25:25,106 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:25:25,770 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:25:25,771 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:25:29,375 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:29,375 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:29,376 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:29,377 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:30,067 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:25:30,377 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:25:31,068 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:25:35,378 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:25:40,378 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:25:40,770 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:25:40,771 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:25:42,620 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:42,620 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:42,620 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_28_9785ace951b0cca55826.png with policy now
+2023-04-17 20:25:42,622 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:42,622 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:42,622 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:42,652 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:42,653 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:42,653 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_29_9366a4bb41e49dae5830.png with policy now
+2023-04-17 20:25:42,653 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:42,653 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:42,653 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:42,677 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:42,677 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:42,678 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_30_b7a36701961583d224b3.png with policy now
+2023-04-17 20:25:42,679 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:42,679 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:42,679 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:42,706 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:42,707 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:42,707 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_31_b257d0d4739b24e1d387.png with policy now
+2023-04-17 20:25:42,707 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:42,707 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:42,707 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:42,730 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:42,731 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:42,731 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_32_bfa79139387ce9fdff47.png with policy now
+2023-04-17 20:25:42,732 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:42,732 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:42,732 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:42,757 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:42,757 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:42,758 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_33_04d14a0ee26b1db21038.png with policy now
+2023-04-17 20:25:42,758 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:42,759 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:42,759 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:42,782 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:42,782 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_34_491cf92cb23e6e01efce.png with policy now
+2023-04-17 20:25:42,783 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:42,783 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:42,784 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:42,784 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:42,805 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:42,806 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:25:42,806 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_35_5476d849b2b1be72d6bb.png with policy now
+2023-04-17 20:25:42,806 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:42,806 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:42,807 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:43,073 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:25:43,073 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_29_9366a4bb41e49dae5830.png
+2023-04-17 20:25:43,074 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_32_bfa79139387ce9fdff47.png
+2023-04-17 20:25:43,074 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_31_b257d0d4739b24e1d387.png
+2023-04-17 20:25:43,074 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_30_b7a36701961583d224b3.png
+2023-04-17 20:25:43,074 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_28_9785ace951b0cca55826.png
+2023-04-17 20:25:43,074 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_34_491cf92cb23e6e01efce.png
+2023-04-17 20:25:43,074 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_35_5476d849b2b1be72d6bb.png
+2023-04-17 20:25:43,074 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_33_04d14a0ee26b1db21038.png
+2023-04-17 20:25:43,074 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images
+2023-04-17 20:25:43,078 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/wk7ruup5-media/images/prediction_29_9366a4bb41e49dae5830.png
+2023-04-17 20:25:43,084 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/fs0sajx8-media/images/prediction_28_9785ace951b0cca55826.png
+2023-04-17 20:25:43,155 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/188owsgh-media/images/prediction_30_b7a36701961583d224b3.png
+2023-04-17 20:25:43,164 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/v4p2uxe9-media/images/prediction_31_b257d0d4739b24e1d387.png
+2023-04-17 20:25:43,186 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/hcx8268c-media/images/prediction_32_bfa79139387ce9fdff47.png
+2023-04-17 20:25:43,207 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/y3um7nzf-media/images/prediction_33_04d14a0ee26b1db21038.png
+2023-04-17 20:25:43,221 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/y1blpjnr-media/images/prediction_34_491cf92cb23e6e01efce.png
+2023-04-17 20:25:43,276 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/10giza98-media/images/prediction_35_5476d849b2b1be72d6bb.png
+2023-04-17 20:25:43,679 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/5a4mrki7-media/images/prediction_30_b7a36701961583d224b3.png
+2023-04-17 20:25:43,679 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/0sw7rc3n-media/images/prediction_29_9366a4bb41e49dae5830.png
+2023-04-17 20:25:43,706 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/coeqpvew-media/images/prediction_28_9785ace951b0cca55826.png
+2023-04-17 20:25:43,762 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/nz8lvqts-media/images/prediction_33_04d14a0ee26b1db21038.png
+2023-04-17 20:25:44,191 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/jp7kip2m-media/images/prediction_31_b257d0d4739b24e1d387.png
+2023-04-17 20:25:44,235 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/960inzap-media/images/prediction_34_491cf92cb23e6e01efce.png
+2023-04-17 20:25:44,240 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/ds1egod7-media/images/prediction_32_bfa79139387ce9fdff47.png
+2023-04-17 20:25:44,243 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/4bgczw4o-media/images/prediction_35_5476d849b2b1be72d6bb.png
+2023-04-17 20:25:45,078 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:25:45,807 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:25:50,742 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:25:50,743 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:25:50,743 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:25:50,744 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:25:51,085 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:25:51,744 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:25:53,086 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:25:54,106 DEBUG   SenderThread:27316 [sender.py:send():375] send: stats
+2023-04-17 20:25:55,842 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:25:55,842 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:25:57,069 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:26:02,070 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:26:04,705 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:04,705 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:04,705 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_37_72e186a1f7c7d03e0d32.png with policy now
+2023-04-17 20:26:04,706 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:04,706 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:04,707 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:04,731 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:04,732 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:04,732 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_38_636470b3ae2d7330b5f7.png with policy now
+2023-04-17 20:26:04,732 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:04,732 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:04,732 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:04,761 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:04,761 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:04,761 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_39_4e345e457a2251a67ada.png with policy now
+2023-04-17 20:26:04,762 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:04,762 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:04,762 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:04,793 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:04,793 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:04,794 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_40_8d50175c454849bb1865.png with policy now
+2023-04-17 20:26:04,794 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:04,794 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:04,794 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:04,816 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:04,817 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:04,817 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_41_258a6474b33e15299f50.png with policy now
+2023-04-17 20:26:04,817 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:04,817 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:04,818 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:04,842 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:04,842 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:04,842 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_42_65f10712251fe541229a.png with policy now
+2023-04-17 20:26:04,842 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:04,842 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:04,843 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:04,866 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:04,866 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:04,867 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_43_4f69f10b3f656d2fa877.png with policy now
+2023-04-17 20:26:04,867 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:04,867 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:04,868 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:04,889 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:04,889 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:04,889 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_44_58aa9ba610efb596dbe7.png with policy now
+2023-04-17 20:26:04,890 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:04,890 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:04,890 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:05,092 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:26:05,092 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_44_58aa9ba610efb596dbe7.png
+2023-04-17 20:26:05,092 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_37_72e186a1f7c7d03e0d32.png
+2023-04-17 20:26:05,092 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_43_4f69f10b3f656d2fa877.png
+2023-04-17 20:26:05,092 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_41_258a6474b33e15299f50.png
+2023-04-17 20:26:05,093 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_40_8d50175c454849bb1865.png
+2023-04-17 20:26:05,093 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_42_65f10712251fe541229a.png
+2023-04-17 20:26:05,093 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_38_636470b3ae2d7330b5f7.png
+2023-04-17 20:26:05,093 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_39_4e345e457a2251a67ada.png
+2023-04-17 20:26:05,093 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images
+2023-04-17 20:26:05,231 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/kkzrvvba-media/images/prediction_37_72e186a1f7c7d03e0d32.png
+2023-04-17 20:26:05,238 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/kzyzmn3x-media/images/prediction_38_636470b3ae2d7330b5f7.png
+2023-04-17 20:26:05,245 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/xudug484-media/images/prediction_39_4e345e457a2251a67ada.png
+2023-04-17 20:26:05,267 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/4rwhcljd-media/images/prediction_40_8d50175c454849bb1865.png
+2023-04-17 20:26:05,307 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/8pdxqonw-media/images/prediction_41_258a6474b33e15299f50.png
+2023-04-17 20:26:05,340 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/xw08nhld-media/images/prediction_43_4f69f10b3f656d2fa877.png
+2023-04-17 20:26:05,368 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/dd4d8zuz-media/images/prediction_44_58aa9ba610efb596dbe7.png
+2023-04-17 20:26:05,545 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/227wln6u-media/images/prediction_42_65f10712251fe541229a.png
+2023-04-17 20:26:05,797 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/c2z7pddr-media/images/prediction_40_8d50175c454849bb1865.png
+2023-04-17 20:26:05,798 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/q6xdbd4y-media/images/prediction_37_72e186a1f7c7d03e0d32.png
+2023-04-17 20:26:05,863 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/wyzusd6g-media/images/prediction_38_636470b3ae2d7330b5f7.png
+2023-04-17 20:26:06,108 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/y0ejtehj-media/images/prediction_39_4e345e457a2251a67ada.png
+2023-04-17 20:26:06,276 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/9kjy4crk-media/images/prediction_43_4f69f10b3f656d2fa877.png
+2023-04-17 20:26:06,296 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/nkuximkv-media/images/prediction_44_58aa9ba610efb596dbe7.png
+2023-04-17 20:26:06,395 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/8z6euicb-media/images/prediction_41_258a6474b33e15299f50.png
+2023-04-17 20:26:06,561 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/jlc9ru3v-media/images/prediction_42_65f10712251fe541229a.png
+2023-04-17 20:26:07,095 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:26:07,891 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:26:10,781 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:26:10,782 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:26:13,021 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:26:13,919 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:13,920 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:13,920 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:13,920 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:14,102 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:26:17,103 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:26:18,920 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:26:23,921 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:26:24,106 DEBUG   SenderThread:27316 [sender.py:send():375] send: stats
+2023-04-17 20:26:25,781 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:26:25,782 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:26:27,974 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:27,974 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:27,974 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_46_1bdb4d4b70a5077a2950.png with policy now
+2023-04-17 20:26:27,975 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:27,975 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:27,977 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:28,000 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:28,000 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:28,000 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_47_b026e0d01a686586127a.png with policy now
+2023-04-17 20:26:28,001 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:28,001 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:28,001 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:28,022 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:28,022 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:28,022 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_48_a9594a7f91cf7628ae38.png with policy now
+2023-04-17 20:26:28,023 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:28,023 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:28,023 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:28,051 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:28,051 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:28,051 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_49_d5821d32b12b52926708.png with policy now
+2023-04-17 20:26:28,052 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:28,052 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:28,052 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:28,076 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:28,077 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:28,077 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_50_fd90f223a22a64ed1dd2.png with policy now
+2023-04-17 20:26:28,077 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:28,077 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:28,077 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:28,097 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:28,097 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:28,097 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_51_faab67a5c23a732a5668.png with policy now
+2023-04-17 20:26:28,097 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:28,098 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:28,098 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:28,110 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:26:28,110 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_46_1bdb4d4b70a5077a2950.png
+2023-04-17 20:26:28,110 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_47_b026e0d01a686586127a.png
+2023-04-17 20:26:28,110 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_49_d5821d32b12b52926708.png
+2023-04-17 20:26:28,110 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_51_faab67a5c23a732a5668.png
+2023-04-17 20:26:28,110 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_50_fd90f223a22a64ed1dd2.png
+2023-04-17 20:26:28,110 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_48_a9594a7f91cf7628ae38.png
+2023-04-17 20:26:28,111 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images
+2023-04-17 20:26:28,120 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:28,121 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:28,121 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_52_d0bac8dafae80c370d2d.png with policy now
+2023-04-17 20:26:28,122 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:28,122 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:28,122 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:28,149 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:28,149 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:28,149 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_53_96e7bac40737cff61ca0.png with policy now
+2023-04-17 20:26:28,150 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:28,150 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:28,151 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:28,425 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/qogr6q3j-media/images/prediction_46_1bdb4d4b70a5077a2950.png
+2023-04-17 20:26:28,514 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/btq5psc2-media/images/prediction_47_b026e0d01a686586127a.png
+2023-04-17 20:26:28,522 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/ppis8kia-media/images/prediction_48_a9594a7f91cf7628ae38.png
+2023-04-17 20:26:28,533 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/9i298ljs-media/images/prediction_49_d5821d32b12b52926708.png
+2023-04-17 20:26:28,544 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/pmv4n63a-media/images/prediction_51_faab67a5c23a732a5668.png
+2023-04-17 20:26:28,574 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/nwxum4vv-media/images/prediction_52_d0bac8dafae80c370d2d.png
+2023-04-17 20:26:28,631 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/8ettig70-media/images/prediction_53_96e7bac40737cff61ca0.png
+2023-04-17 20:26:28,839 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/vs18kifq-media/images/prediction_50_fd90f223a22a64ed1dd2.png
+2023-04-17 20:26:29,046 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/slu2knrf-media/images/prediction_47_b026e0d01a686586127a.png
+2023-04-17 20:26:29,046 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/tm6jxm5x-media/images/prediction_46_1bdb4d4b70a5077a2950.png
+2023-04-17 20:26:29,061 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/2wpe20p6-media/images/prediction_48_a9594a7f91cf7628ae38.png
+2023-04-17 20:26:29,110 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:26:29,110 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_52_d0bac8dafae80c370d2d.png
+2023-04-17 20:26:29,111 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_53_96e7bac40737cff61ca0.png
+2023-04-17 20:26:29,111 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images
+2023-04-17 20:26:29,115 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/mnlcbe55-media/images/prediction_49_d5821d32b12b52926708.png
+2023-04-17 20:26:29,151 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:26:29,353 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/75l46161-media/images/prediction_51_faab67a5c23a732a5668.png
+2023-04-17 20:26:29,580 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/87b6xach-media/images/prediction_50_fd90f223a22a64ed1dd2.png
+2023-04-17 20:26:29,582 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/jx3az1d8-media/images/prediction_52_d0bac8dafae80c370d2d.png
+2023-04-17 20:26:29,621 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/6t09b6lp-media/images/prediction_53_96e7bac40737cff61ca0.png
+2023-04-17 20:26:31,112 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:26:34,152 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:26:37,707 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:37,708 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:37,708 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:37,708 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:38,122 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:26:39,123 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:26:39,709 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:26:40,818 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:26:40,818 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:26:45,026 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:26:50,027 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:26:51,758 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:51,759 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:51,759 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_55_1a4a5bc30c203c6067fe.png with policy now
+2023-04-17 20:26:51,759 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:51,760 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:51,761 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:51,789 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:51,790 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:51,790 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_56_255185b57ab4ca88f5bf.png with policy now
+2023-04-17 20:26:51,790 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:51,790 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:51,791 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:51,811 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:51,812 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:51,812 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_57_fe2690a17fa3edc8181d.png with policy now
+2023-04-17 20:26:51,812 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:51,812 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:51,812 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:51,838 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:51,839 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:51,839 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_58_a446a27ef57edd78c480.png with policy now
+2023-04-17 20:26:51,839 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:51,839 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:51,840 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:51,863 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:51,863 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:51,864 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_59_9d176f8053251224e3c6.png with policy now
+2023-04-17 20:26:51,864 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:51,864 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:51,865 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:51,889 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:51,889 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:51,889 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_60_4da9c8f5b2ec9487c447.png with policy now
+2023-04-17 20:26:51,890 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:51,890 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:51,890 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:51,909 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:51,909 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:51,909 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_61_e7667bf8fda2405888e5.png with policy now
+2023-04-17 20:26:51,910 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:51,910 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:51,910 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:51,934 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:26:51,934 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:26:51,935 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_62_4ea21cbc3a829f5158c4.png with policy now
+2023-04-17 20:26:51,935 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:26:51,935 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:26:51,935 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:26:52,131 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:26:52,131 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_57_fe2690a17fa3edc8181d.png
+2023-04-17 20:26:52,131 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_61_e7667bf8fda2405888e5.png
+2023-04-17 20:26:52,131 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_58_a446a27ef57edd78c480.png
+2023-04-17 20:26:52,131 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_59_9d176f8053251224e3c6.png
+2023-04-17 20:26:52,131 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_62_4ea21cbc3a829f5158c4.png
+2023-04-17 20:26:52,131 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_56_255185b57ab4ca88f5bf.png
+2023-04-17 20:26:52,132 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_55_1a4a5bc30c203c6067fe.png
+2023-04-17 20:26:52,132 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_60_4da9c8f5b2ec9487c447.png
+2023-04-17 20:26:52,132 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images
+2023-04-17 20:26:52,215 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/9jml2ul8-media/images/prediction_55_1a4a5bc30c203c6067fe.png
+2023-04-17 20:26:52,390 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/12okstpm-media/images/prediction_61_e7667bf8fda2405888e5.png
+2023-04-17 20:26:52,457 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/4bnz99jp-media/images/prediction_62_4ea21cbc3a829f5158c4.png
+2023-04-17 20:26:52,458 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/goc6d19x-media/images/prediction_56_255185b57ab4ca88f5bf.png
+2023-04-17 20:26:52,515 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/7816it3z-media/images/prediction_57_fe2690a17fa3edc8181d.png
+2023-04-17 20:26:52,528 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/bghp776a-media/images/prediction_58_a446a27ef57edd78c480.png
+2023-04-17 20:26:52,568 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/3997nxsz-media/images/prediction_59_9d176f8053251224e3c6.png
+2023-04-17 20:26:52,578 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/uvcd52x8-media/images/prediction_60_4da9c8f5b2ec9487c447.png
+2023-04-17 20:26:52,856 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/0bspqgzw-media/images/prediction_61_e7667bf8fda2405888e5.png
+2023-04-17 20:26:53,006 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/yokiu7yd-media/images/prediction_62_4ea21cbc3a829f5158c4.png
+2023-04-17 20:26:53,007 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/5o0pr3dw-media/images/prediction_56_255185b57ab4ca88f5bf.png
+2023-04-17 20:26:53,043 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/0oktyek0-media/images/prediction_60_4da9c8f5b2ec9487c447.png
+2023-04-17 20:26:53,056 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/q58g1e8r-media/images/prediction_55_1a4a5bc30c203c6067fe.png
+2023-04-17 20:26:53,133 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:26:53,335 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/xib6jn7u-media/images/prediction_57_fe2690a17fa3edc8181d.png
+2023-04-17 20:26:53,520 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/8b7mtvkm-media/images/prediction_58_a446a27ef57edd78c480.png
+2023-04-17 20:26:53,615 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/rgf8r6p4-media/images/prediction_59_9d176f8053251224e3c6.png
+2023-04-17 20:26:54,107 DEBUG   SenderThread:27316 [sender.py:send():375] send: stats
+2023-04-17 20:26:55,107 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:26:55,135 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:26:55,812 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:26:55,813 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:27:00,531 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:27:01,141 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:27:02,940 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:02,941 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:02,941 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:02,942 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:03,142 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:27:05,943 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:27:10,859 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:27:10,859 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:27:11,008 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:27:13,522 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:13,522 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:13,523 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_64_34f8c9e84d6646f2b04d.png with policy now
+2023-04-17 20:27:13,523 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:13,523 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:13,523 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:13,545 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:13,546 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:13,546 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_65_447b23cd0b2d57567bd9.png with policy now
+2023-04-17 20:27:13,546 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:13,546 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:13,546 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:13,565 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:13,566 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:13,566 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_66_db97f183f182125ceda3.png with policy now
+2023-04-17 20:27:13,566 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:13,567 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:13,567 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:13,590 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:13,590 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:13,590 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_67_b761af3a7b9b58fed8ca.png with policy now
+2023-04-17 20:27:13,591 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:13,591 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:13,591 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:13,615 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:13,616 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:13,616 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_68_067cafc395d87a9a4541.png with policy now
+2023-04-17 20:27:13,616 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:13,616 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:13,616 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:13,636 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:13,636 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:13,636 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_69_de553f24f86e4f6069c4.png with policy now
+2023-04-17 20:27:13,636 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:13,637 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:13,637 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:13,660 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:13,660 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:13,660 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_70_0786962bbc7c62975b72.png with policy now
+2023-04-17 20:27:13,660 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:13,661 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:13,661 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:13,681 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:13,682 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:13,682 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_71_54c1d3201dcc667d5dd2.png with policy now
+2023-04-17 20:27:13,682 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:13,683 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:13,685 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:14,020 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/p8q0vtip-media/images/prediction_64_34f8c9e84d6646f2b04d.png
+2023-04-17 20:27:14,099 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/kt7pborp-media/images/prediction_68_067cafc395d87a9a4541.png
+2023-04-17 20:27:14,114 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/e4viif5b-media/images/prediction_69_de553f24f86e4f6069c4.png
+2023-04-17 20:27:14,115 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/yhpsp0dq-media/images/prediction_70_0786962bbc7c62975b72.png
+2023-04-17 20:27:14,152 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:27:14,153 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_65_447b23cd0b2d57567bd9.png
+2023-04-17 20:27:14,153 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_67_b761af3a7b9b58fed8ca.png
+2023-04-17 20:27:14,154 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_71_54c1d3201dcc667d5dd2.png
+2023-04-17 20:27:14,154 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_64_34f8c9e84d6646f2b04d.png
+2023-04-17 20:27:14,154 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_69_de553f24f86e4f6069c4.png
+2023-04-17 20:27:14,154 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_70_0786962bbc7c62975b72.png
+2023-04-17 20:27:14,154 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_68_067cafc395d87a9a4541.png
+2023-04-17 20:27:14,154 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_66_db97f183f182125ceda3.png
+2023-04-17 20:27:14,154 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images
+2023-04-17 20:27:14,230 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/sjkgssoy-media/images/prediction_66_db97f183f182125ceda3.png
+2023-04-17 20:27:14,266 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/neerh3dp-media/images/prediction_67_b761af3a7b9b58fed8ca.png
+2023-04-17 20:27:14,280 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/cgalhziu-media/images/prediction_65_447b23cd0b2d57567bd9.png
+2023-04-17 20:27:14,366 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/ovmkr8c7-media/images/prediction_71_54c1d3201dcc667d5dd2.png
+2023-04-17 20:27:14,632 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/405inxp8-media/images/prediction_64_34f8c9e84d6646f2b04d.png
+2023-04-17 20:27:14,709 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/1l6jc8ik-media/images/prediction_69_de553f24f86e4f6069c4.png
+2023-04-17 20:27:14,712 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/paiw3wkb-media/images/prediction_70_0786962bbc7c62975b72.png
+2023-04-17 20:27:14,720 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/p6aj8yrh-media/images/prediction_68_067cafc395d87a9a4541.png
+2023-04-17 20:27:14,777 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/akxh7ijj-media/images/prediction_67_b761af3a7b9b58fed8ca.png
+2023-04-17 20:27:14,882 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/lqyktpag-media/images/prediction_66_db97f183f182125ceda3.png
+2023-04-17 20:27:15,126 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/dmuucvg4-media/images/prediction_65_447b23cd0b2d57567bd9.png
+2023-04-17 20:27:15,154 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:27:15,185 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/q0etduri-media/images/prediction_71_54c1d3201dcc667d5dd2.png
+2023-04-17 20:27:16,690 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:27:21,688 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:21,688 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:21,688 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:21,689 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:22,161 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:27:22,689 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:27:23,162 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:27:24,107 DEBUG   SenderThread:27316 [sender.py:send():375] send: stats
+2023-04-17 20:27:25,937 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:27:25,937 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:27:28,185 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:27:33,186 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:27:35,221 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:35,221 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:35,222 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_73_617c3ad960e49d4a73e7.png with policy now
+2023-04-17 20:27:35,222 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:35,222 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:35,223 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:35,246 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:35,246 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:35,246 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_74_02d9eb436962043bf64d.png with policy now
+2023-04-17 20:27:35,247 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:35,247 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:35,247 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:35,267 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:35,268 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:35,268 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_75_2168380d11a4dfa89d75.png with policy now
+2023-04-17 20:27:35,268 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:35,268 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:35,268 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:35,289 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:35,289 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:35,290 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_76_7dd4fc34a157b7418067.png with policy now
+2023-04-17 20:27:35,290 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:35,290 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:35,290 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:35,313 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:35,314 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:35,314 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_77_0b94e9b5c67a1bd2186e.png with policy now
+2023-04-17 20:27:35,317 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:35,317 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:35,318 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:35,335 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:35,335 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:35,336 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_78_541901cb4daea2706359.png with policy now
+2023-04-17 20:27:35,336 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:35,336 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:35,336 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:35,356 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:35,356 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:35,356 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_79_1da156bc5010c4749354.png with policy now
+2023-04-17 20:27:35,356 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:35,357 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:35,357 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:35,386 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:35,386 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:35,387 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_80_42ee8a4b1b8eea4bc95b.png with policy now
+2023-04-17 20:27:35,387 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:35,387 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:35,387 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:35,836 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/gtfgna4u-media/images/prediction_75_2168380d11a4dfa89d75.png
+2023-04-17 20:27:35,969 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/7cq01l2t-media/images/prediction_80_42ee8a4b1b8eea4bc95b.png
+2023-04-17 20:27:36,170 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:27:36,170 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_77_0b94e9b5c67a1bd2186e.png
+2023-04-17 20:27:36,170 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_80_42ee8a4b1b8eea4bc95b.png
+2023-04-17 20:27:36,171 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_76_7dd4fc34a157b7418067.png
+2023-04-17 20:27:36,171 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_79_1da156bc5010c4749354.png
+2023-04-17 20:27:36,171 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_75_2168380d11a4dfa89d75.png
+2023-04-17 20:27:36,171 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_74_02d9eb436962043bf64d.png
+2023-04-17 20:27:36,171 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_73_617c3ad960e49d4a73e7.png
+2023-04-17 20:27:36,172 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_78_541901cb4daea2706359.png
+2023-04-17 20:27:36,172 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images
+2023-04-17 20:27:37,171 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:27:38,388 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:27:39,419 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/vk3qnyzh-media/images/prediction_80_42ee8a4b1b8eea4bc95b.png
+2023-04-17 20:27:40,014 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/ajx776oi-media/images/prediction_73_617c3ad960e49d4a73e7.png
+2023-04-17 20:27:40,366 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/7ze9oq0k-media/images/prediction_75_2168380d11a4dfa89d75.png
+2023-04-17 20:27:40,760 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/heno0gbj-media/images/prediction_79_1da156bc5010c4749354.png
+2023-04-17 20:27:40,761 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/c72jy06x-media/images/prediction_78_541901cb4daea2706359.png
+2023-04-17 20:27:40,823 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: stop_status
+2023-04-17 20:27:40,823 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: stop_status
+2023-04-17 20:27:41,057 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/4sbbrbl7-media/images/prediction_76_7dd4fc34a157b7418067.png
+2023-04-17 20:27:41,125 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/lfxst02c-media/images/prediction_74_02d9eb436962043bf64d.png
+2023-04-17 20:27:41,151 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/gpgu9nfk-media/images/prediction_77_0b94e9b5c67a1bd2186e.png
+2023-04-17 20:27:41,392 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/lhg2e98a-media/images/prediction_73_617c3ad960e49d4a73e7.png
+2023-04-17 20:27:41,700 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/3mov1hya-media/images/prediction_76_7dd4fc34a157b7418067.png
+2023-04-17 20:27:41,722 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/wea7f99g-media/images/prediction_78_541901cb4daea2706359.png
+2023-04-17 20:27:41,961 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/ev7mxad1-media/images/prediction_79_1da156bc5010c4749354.png
+2023-04-17 20:27:42,366 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/m50lpq95-media/images/prediction_74_02d9eb436962043bf64d.png
+2023-04-17 20:27:42,366 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/2bm52dls-media/images/prediction_77_0b94e9b5c67a1bd2186e.png
+2023-04-17 20:27:42,983 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:42,984 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:42,984 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:42,984 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:43,177 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:27:43,984 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:27:45,179 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:27:48,985 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:27:53,986 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:27:54,108 DEBUG   SenderThread:27316 [sender.py:send():375] send: stats
+2023-04-17 20:27:55,612 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:55,612 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:55,612 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_82_7f3a9553885242350852.png with policy now
+2023-04-17 20:27:55,613 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:55,613 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:55,613 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:55,638 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:55,638 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:55,638 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_83_45732978a734202224c7.png with policy now
+2023-04-17 20:27:55,639 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:55,639 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:55,639 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:55,660 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:55,660 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:55,660 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_84_901010277d44802b9673.png with policy now
+2023-04-17 20:27:55,661 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:55,661 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:55,661 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:55,679 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:55,679 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:55,680 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_85_69baf07928bfa066e62f.png with policy now
+2023-04-17 20:27:55,680 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:55,680 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:55,681 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:55,705 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:55,706 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:55,706 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_86_4dabe59c7482d53c44ea.png with policy now
+2023-04-17 20:27:55,706 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:55,706 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:55,707 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:55,729 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:55,729 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:55,729 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_87_db52cb91968e62ba406f.png with policy now
+2023-04-17 20:27:55,730 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:55,730 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:55,730 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:55,750 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:55,751 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:55,751 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_88_e01d043d6249906f4a98.png with policy now
+2023-04-17 20:27:55,752 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:55,752 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:55,752 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:55,772 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: partial_history
+2023-04-17 20:27:55,772 DEBUG   SenderThread:27316 [sender.py:send():375] send: files
+2023-04-17 20:27:55,773 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file media/images/prediction_89_3e443451616fb9c8368d.png with policy now
+2023-04-17 20:27:55,773 DEBUG   SenderThread:27316 [sender.py:send():375] send: history
+2023-04-17 20:27:55,773 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: summary_record
+2023-04-17 20:27:55,774 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:55,774 DEBUG   SenderThread:27316 [sender.py:send():375] send: exit
+2023-04-17 20:27:55,774 INFO    SenderThread:27316 [sender.py:send_exit():598] handling exit code: 0
+2023-04-17 20:27:55,774 INFO    SenderThread:27316 [sender.py:send_exit():600] handling runtime: 242
+2023-04-17 20:27:55,774 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:55,774 INFO    SenderThread:27316 [sender.py:send_exit():606] send defer
+2023-04-17 20:27:55,775 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:55,776 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 0
+2023-04-17 20:27:55,776 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:55,776 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-04-17 20:27:55,777 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 1
+2023-04-17 20:27:55,777 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:55,777 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 1
+2023-04-17 20:27:55,777 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:55,777 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-04-17 20:27:55,777 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 2
+2023-04-17 20:27:55,777 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:55,777 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 2
+2023-04-17 20:27:55,777 INFO    HandlerThread:27316 [system_monitor.py:finish():190] Stopping system monitor
+2023-04-17 20:27:55,777 DEBUG   SystemMonitor:27316 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-04-17 20:27:55,777 INFO    HandlerThread:27316 [interfaces.py:finish():202] Joined cpu monitor
+2023-04-17 20:27:55,777 DEBUG   SystemMonitor:27316 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-04-17 20:27:55,777 INFO    HandlerThread:27316 [interfaces.py:finish():202] Joined disk monitor
+2023-04-17 20:27:55,778 INFO    HandlerThread:27316 [interfaces.py:finish():202] Joined memory monitor
+2023-04-17 20:27:55,778 INFO    HandlerThread:27316 [interfaces.py:finish():202] Joined network monitor
+2023-04-17 20:27:55,778 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:55,778 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-04-17 20:27:55,778 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 3
+2023-04-17 20:27:55,778 DEBUG   SenderThread:27316 [sender.py:send():375] send: stats
+2023-04-17 20:27:55,778 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:55,778 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 3
+2023-04-17 20:27:55,778 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:55,779 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-04-17 20:27:55,779 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 4
+2023-04-17 20:27:55,779 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:55,779 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 4
+2023-04-17 20:27:55,779 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:55,779 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-04-17 20:27:55,779 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 5
+2023-04-17 20:27:55,779 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:55,779 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 5
+2023-04-17 20:27:55,779 DEBUG   SenderThread:27316 [sender.py:send():375] send: summary
+2023-04-17 20:27:55,779 INFO    SenderThread:27316 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-04-17 20:27:55,779 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:55,779 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-04-17 20:27:55,779 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 6
+2023-04-17 20:27:55,779 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:55,779 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 6
+2023-04-17 20:27:55,780 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:55,780 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-04-17 20:27:55,780 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 7
+2023-04-17 20:27:55,780 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: status_report
+2023-04-17 20:27:55,780 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:55,780 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 7
+2023-04-17 20:27:55,780 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:55,780 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-04-17 20:27:56,086 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/n5b2ff09-media/images/prediction_82_7f3a9553885242350852.png
+2023-04-17 20:27:56,114 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/bqjk2z96-media/images/prediction_83_45732978a734202224c7.png
+2023-04-17 20:27:56,144 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/k97opxab-media/images/prediction_85_69baf07928bfa066e62f.png
+2023-04-17 20:27:56,158 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/il5en6j6-media/images/prediction_84_901010277d44802b9673.png
+2023-04-17 20:27:56,188 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:27:56,188 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_89_3e443451616fb9c8368d.png
+2023-04-17 20:27:56,189 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_84_901010277d44802b9673.png
+2023-04-17 20:27:56,189 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_88_e01d043d6249906f4a98.png
+2023-04-17 20:27:56,189 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_87_db52cb91968e62ba406f.png
+2023-04-17 20:27:56,190 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_86_4dabe59c7482d53c44ea.png
+2023-04-17 20:27:56,190 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_83_45732978a734202224c7.png
+2023-04-17 20:27:56,190 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_85_69baf07928bfa066e62f.png
+2023-04-17 20:27:56,190 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_created():278] file/dir created: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_82_7f3a9553885242350852.png
+2023-04-17 20:27:56,191 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images
+2023-04-17 20:27:56,213 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/28bucfec-media/images/prediction_86_4dabe59c7482d53c44ea.png
+2023-04-17 20:27:56,227 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/xu1gazhl-media/images/prediction_87_db52cb91968e62ba406f.png
+2023-04-17 20:27:56,227 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/d544ws3k-media/images/prediction_88_e01d043d6249906f4a98.png
+2023-04-17 20:27:56,247 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/77xxuyh0-media/images/prediction_89_3e443451616fb9c8368d.png
+2023-04-17 20:27:56,254 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 8
+2023-04-17 20:27:56,254 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:56,254 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 8
+2023-04-17 20:27:56,255 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:56,255 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-04-17 20:27:56,272 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 9
+2023-04-17 20:27:56,273 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:56,273 DEBUG   SenderThread:27316 [sender.py:send():375] send: artifact
+2023-04-17 20:27:56,273 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 9
+2023-04-17 20:27:56,696 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/jncdmvfh-media/images/prediction_84_901010277d44802b9673.png
+2023-04-17 20:27:56,722 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/9oghugha-media/images/prediction_87_db52cb91968e62ba406f.png
+2023-04-17 20:27:56,723 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/f0mp7j19-media/images/prediction_86_4dabe59c7482d53c44ea.png
+2023-04-17 20:27:56,723 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/9lj7s3is-media/images/prediction_83_45732978a734202224c7.png
+2023-04-17 20:27:56,729 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/f7dy8kvc-media/images/prediction_85_69baf07928bfa066e62f.png
+2023-04-17 20:27:56,748 INFO    wandb-upload_0:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/6ce1405c-media/images/prediction_82_7f3a9553885242350852.png
+2023-04-17 20:27:56,775 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-17 20:27:57,190 INFO    Thread-12 :27316 [dir_watcher.py:_on_file_modified():295] file/dir modified: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:27:57,215 INFO    SenderThread:27316 [sender.py:send_artifact():1474] sent artifact job-git_github.com_debaumann_SUIM.git_train_suimnet.py - {'id': 'QXJ0aWZhY3Q6NDI2NzU5NjE1', 'digest': '2b6518f49a8b5af3efd93e6f6294227e', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'job-git_github.com_debaumann_SUIM.git_train_suimnet.py', 'alias': 'latest'}, {'artifactCollectionName': 'job-git_github.com_debaumann_SUIM.git_train_suimnet.py', 'alias': 'v8'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjYyMzc2NzI1', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDI2NzU5NjE1', 'versionIndex': 8}}, 'version': 'v8'}
+2023-04-17 20:27:57,215 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:57,215 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-04-17 20:27:57,215 INFO    SenderThread:27316 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-04-17 20:27:57,320 INFO    wandb-upload_4:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/uo7s7d46-media/images/prediction_88_e01d043d6249906f4a98.png
+2023-04-17 20:27:57,321 INFO    wandb-upload_2:27316 [upload_job.py:push():137] Uploaded file /tmp/tmp1yp21ky9wandb/cgbtcx06-media/images/prediction_89_3e443451616fb9c8368d.png
+2023-04-17 20:27:58,193 INFO    SenderThread:27316 [dir_watcher.py:finish():395] scan: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files
+2023-04-17 20:27:58,193 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/requirements.txt requirements.txt
+2023-04-17 20:27:58,194 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/conda-environment.yaml conda-environment.yaml
+2023-04-17 20:27:58,194 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/config.yaml config.yaml
+2023-04-17 20:27:58,194 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log output.log
+2023-04-17 20:27:58,194 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json wandb-summary.json
+2023-04-17 20:27:58,194 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-metadata.json wandb-metadata.json
+2023-04-17 20:27:58,215 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_15_9da564ad38a0df45e647.png media/images/prediction_15_9da564ad38a0df45e647.png
+2023-04-17 20:27:58,216 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_8_da1170da7bd6cd73ad19.png media/images/prediction_8_da1170da7bd6cd73ad19.png
+2023-04-17 20:27:58,216 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_58_a446a27ef57edd78c480.png media/images/prediction_58_a446a27ef57edd78c480.png
+2023-04-17 20:27:58,216 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_6_648ad9312df9c92359bc.png media/images/prediction_6_648ad9312df9c92359bc.png
+2023-04-17 20:27:58,216 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_30_b7a36701961583d224b3.png media/images/prediction_30_b7a36701961583d224b3.png
+2023-04-17 20:27:58,216 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_7_ae99d92d9ffb3c781f48.png media/images/prediction_7_ae99d92d9ffb3c781f48.png
+2023-04-17 20:27:58,216 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_32_bfa79139387ce9fdff47.png media/images/prediction_32_bfa79139387ce9fdff47.png
+2023-04-17 20:27:58,216 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_49_d5821d32b12b52926708.png media/images/prediction_49_d5821d32b12b52926708.png
+2023-04-17 20:27:58,216 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_24_13997ff15531cedec3d8.png media/images/prediction_24_13997ff15531cedec3d8.png
+2023-04-17 20:27:58,216 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_70_0786962bbc7c62975b72.png media/images/prediction_70_0786962bbc7c62975b72.png
+2023-04-17 20:27:58,216 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_73_617c3ad960e49d4a73e7.png media/images/prediction_73_617c3ad960e49d4a73e7.png
+2023-04-17 20:27:58,216 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_59_9d176f8053251224e3c6.png media/images/prediction_59_9d176f8053251224e3c6.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_40_8d50175c454849bb1865.png media/images/prediction_40_8d50175c454849bb1865.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_23_24cc5e73a0dd141cf443.png media/images/prediction_23_24cc5e73a0dd141cf443.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_3_f67d10041e5f82343d1d.png media/images/prediction_3_f67d10041e5f82343d1d.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_82_7f3a9553885242350852.png media/images/prediction_82_7f3a9553885242350852.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_62_4ea21cbc3a829f5158c4.png media/images/prediction_62_4ea21cbc3a829f5158c4.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_21_f4d5ef25177ae2656722.png media/images/prediction_21_f4d5ef25177ae2656722.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_14_2c8290ba120940fdb5fc.png media/images/prediction_14_2c8290ba120940fdb5fc.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_67_b761af3a7b9b58fed8ca.png media/images/prediction_67_b761af3a7b9b58fed8ca.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_51_faab67a5c23a732a5668.png media/images/prediction_51_faab67a5c23a732a5668.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_20_0d4de270584710f1627e.png media/images/prediction_20_0d4de270584710f1627e.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_69_de553f24f86e4f6069c4.png media/images/prediction_69_de553f24f86e4f6069c4.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_5_8ad5d2d61caed1c5ed86.png media/images/prediction_5_8ad5d2d61caed1c5ed86.png
+2023-04-17 20:27:58,217 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_78_541901cb4daea2706359.png media/images/prediction_78_541901cb4daea2706359.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_61_e7667bf8fda2405888e5.png media/images/prediction_61_e7667bf8fda2405888e5.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_79_1da156bc5010c4749354.png media/images/prediction_79_1da156bc5010c4749354.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_50_fd90f223a22a64ed1dd2.png media/images/prediction_50_fd90f223a22a64ed1dd2.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_55_1a4a5bc30c203c6067fe.png media/images/prediction_55_1a4a5bc30c203c6067fe.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_28_9785ace951b0cca55826.png media/images/prediction_28_9785ace951b0cca55826.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_80_42ee8a4b1b8eea4bc95b.png media/images/prediction_80_42ee8a4b1b8eea4bc95b.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_42_65f10712251fe541229a.png media/images/prediction_42_65f10712251fe541229a.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_16_1fd7881f3b0c6ed7f6d8.png media/images/prediction_16_1fd7881f3b0c6ed7f6d8.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_60_4da9c8f5b2ec9487c447.png media/images/prediction_60_4da9c8f5b2ec9487c447.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_19_a891e1dc1d37ffb2ab4b.png media/images/prediction_19_a891e1dc1d37ffb2ab4b.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_34_491cf92cb23e6e01efce.png media/images/prediction_34_491cf92cb23e6e01efce.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_71_54c1d3201dcc667d5dd2.png media/images/prediction_71_54c1d3201dcc667d5dd2.png
+2023-04-17 20:27:58,218 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_41_258a6474b33e15299f50.png media/images/prediction_41_258a6474b33e15299f50.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_12_fcaeed990e5d284138de.png media/images/prediction_12_fcaeed990e5d284138de.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_4_4c0f92559074ab59a349.png media/images/prediction_4_4c0f92559074ab59a349.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_46_1bdb4d4b70a5077a2950.png media/images/prediction_46_1bdb4d4b70a5077a2950.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_86_4dabe59c7482d53c44ea.png media/images/prediction_86_4dabe59c7482d53c44ea.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_31_b257d0d4739b24e1d387.png media/images/prediction_31_b257d0d4739b24e1d387.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_65_447b23cd0b2d57567bd9.png media/images/prediction_65_447b23cd0b2d57567bd9.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_39_4e345e457a2251a67ada.png media/images/prediction_39_4e345e457a2251a67ada.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_25_488bf2f1552f283fa2d9.png media/images/prediction_25_488bf2f1552f283fa2d9.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_75_2168380d11a4dfa89d75.png media/images/prediction_75_2168380d11a4dfa89d75.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_1_820acc889842c8e4fb0a.png media/images/prediction_1_820acc889842c8e4fb0a.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_66_db97f183f182125ceda3.png media/images/prediction_66_db97f183f182125ceda3.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_85_69baf07928bfa066e62f.png media/images/prediction_85_69baf07928bfa066e62f.png
+2023-04-17 20:27:58,219 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_38_636470b3ae2d7330b5f7.png media/images/prediction_38_636470b3ae2d7330b5f7.png
+2023-04-17 20:27:58,220 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_26_24aa0487a1bc8aacfea5.png media/images/prediction_26_24aa0487a1bc8aacfea5.png
+2023-04-17 20:27:58,220 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_47_b026e0d01a686586127a.png media/images/prediction_47_b026e0d01a686586127a.png
+2023-04-17 20:27:58,220 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_52_d0bac8dafae80c370d2d.png media/images/prediction_52_d0bac8dafae80c370d2d.png
+2023-04-17 20:27:58,220 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_17_45e3e4dcc4ce88107463.png media/images/prediction_17_45e3e4dcc4ce88107463.png
+2023-04-17 20:27:58,220 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_77_0b94e9b5c67a1bd2186e.png media/images/prediction_77_0b94e9b5c67a1bd2186e.png
+2023-04-17 20:27:58,220 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_68_067cafc395d87a9a4541.png media/images/prediction_68_067cafc395d87a9a4541.png
+2023-04-17 20:27:58,220 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_35_5476d849b2b1be72d6bb.png media/images/prediction_35_5476d849b2b1be72d6bb.png
+2023-04-17 20:27:58,220 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_83_45732978a734202224c7.png media/images/prediction_83_45732978a734202224c7.png
+2023-04-17 20:27:58,220 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_2_388764164455c081d8b5.png media/images/prediction_2_388764164455c081d8b5.png
+2023-04-17 20:27:58,220 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_10_4f3b4468108df7d0464a.png media/images/prediction_10_4f3b4468108df7d0464a.png
+2023-04-17 20:27:58,220 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_48_a9594a7f91cf7628ae38.png media/images/prediction_48_a9594a7f91cf7628ae38.png
+2023-04-17 20:27:58,220 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_57_fe2690a17fa3edc8181d.png media/images/prediction_57_fe2690a17fa3edc8181d.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_87_db52cb91968e62ba406f.png media/images/prediction_87_db52cb91968e62ba406f.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_88_e01d043d6249906f4a98.png media/images/prediction_88_e01d043d6249906f4a98.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_22_008367488d5216dfbae0.png media/images/prediction_22_008367488d5216dfbae0.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_44_58aa9ba610efb596dbe7.png media/images/prediction_44_58aa9ba610efb596dbe7.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_84_901010277d44802b9673.png media/images/prediction_84_901010277d44802b9673.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_33_04d14a0ee26b1db21038.png media/images/prediction_33_04d14a0ee26b1db21038.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_29_9366a4bb41e49dae5830.png media/images/prediction_29_9366a4bb41e49dae5830.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_76_7dd4fc34a157b7418067.png media/images/prediction_76_7dd4fc34a157b7418067.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_74_02d9eb436962043bf64d.png media/images/prediction_74_02d9eb436962043bf64d.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_11_2ce03e022c9bcb3373a0.png media/images/prediction_11_2ce03e022c9bcb3373a0.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_43_4f69f10b3f656d2fa877.png media/images/prediction_43_4f69f10b3f656d2fa877.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_56_255185b57ab4ca88f5bf.png media/images/prediction_56_255185b57ab4ca88f5bf.png
+2023-04-17 20:27:58,221 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_13_88644f25fe0eb6f41af4.png media/images/prediction_13_88644f25fe0eb6f41af4.png
+2023-04-17 20:27:58,222 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_53_96e7bac40737cff61ca0.png media/images/prediction_53_96e7bac40737cff61ca0.png
+2023-04-17 20:27:58,222 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_89_3e443451616fb9c8368d.png media/images/prediction_89_3e443451616fb9c8368d.png
+2023-04-17 20:27:58,222 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_37_72e186a1f7c7d03e0d32.png media/images/prediction_37_72e186a1f7c7d03e0d32.png
+2023-04-17 20:27:58,222 INFO    SenderThread:27316 [dir_watcher.py:finish():409] scan save: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/media/images/prediction_64_34f8c9e84d6646f2b04d.png media/images/prediction_64_34f8c9e84d6646f2b04d.png
+2023-04-17 20:27:58,222 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 10
+2023-04-17 20:27:58,222 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: poll_exit
+2023-04-17 20:27:58,222 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:58,223 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 10
+2023-04-17 20:27:58,223 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:58,223 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-04-17 20:27:58,223 INFO    SenderThread:27316 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-17 20:27:58,749 INFO    wandb-upload_7:27316 [upload_job.py:push():137] Uploaded file /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/config.yaml
+2023-04-17 20:27:58,751 INFO    wandb-upload_6:27316 [upload_job.py:push():137] Uploaded file /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/conda-environment.yaml
+2023-04-17 20:27:58,752 INFO    wandb-upload_3:27316 [upload_job.py:push():137] Uploaded file /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/requirements.txt
+2023-04-17 20:27:58,753 INFO    wandb-upload_5:27316 [upload_job.py:push():137] Uploaded file /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/wandb-summary.json
+2023-04-17 20:27:58,772 INFO    wandb-upload_1:27316 [upload_job.py:push():137] Uploaded file /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/files/output.log
+2023-04-17 20:27:58,972 INFO    Thread-11 (_thread_body):27316 [sender.py:transition_state():626] send defer: 11
+2023-04-17 20:27:58,973 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:58,973 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 11
+2023-04-17 20:27:58,974 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:58,974 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-04-17 20:27:58,974 INFO    SenderThread:27316 [file_pusher.py:join():173] waiting for file pusher
+2023-04-17 20:27:58,974 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 12
+2023-04-17 20:27:58,975 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:58,975 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 12
+2023-04-17 20:27:58,975 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:58,975 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-04-17 20:27:59,670 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 13
+2023-04-17 20:27:59,671 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:59,671 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 13
+2023-04-17 20:27:59,671 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:59,672 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-04-17 20:27:59,672 INFO    SenderThread:27316 [sender.py:transition_state():626] send defer: 14
+2023-04-17 20:27:59,672 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: defer
+2023-04-17 20:27:59,673 INFO    HandlerThread:27316 [handler.py:handle_request_defer():170] handle defer: 14
+2023-04-17 20:27:59,673 DEBUG   SenderThread:27316 [sender.py:send():375] send: final
+2023-04-17 20:27:59,673 DEBUG   SenderThread:27316 [sender.py:send():375] send: footer
+2023-04-17 20:27:59,673 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: defer
+2023-04-17 20:27:59,673 INFO    SenderThread:27316 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-04-17 20:27:59,674 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: poll_exit
+2023-04-17 20:27:59,675 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: poll_exit
+2023-04-17 20:27:59,676 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: server_info
+2023-04-17 20:27:59,677 DEBUG   SenderThread:27316 [sender.py:send_request():402] send_request: server_info
+2023-04-17 20:27:59,679 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: get_summary
+2023-04-17 20:27:59,681 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: sampled_history
+2023-04-17 20:27:59,875 INFO    MainThread:27316 [wandb_run.py:_footer_history_summary_info():3476] rendering history
+2023-04-17 20:27:59,876 INFO    MainThread:27316 [wandb_run.py:_footer_history_summary_info():3508] rendering summary
+2023-04-17 20:27:59,876 INFO    MainThread:27316 [wandb_run.py:_footer_sync_info():3434] logging synced files
+2023-04-17 20:27:59,877 DEBUG   HandlerThread:27316 [handler.py:handle_request():144] handle_request: shutdown
+2023-04-17 20:27:59,877 INFO    HandlerThread:27316 [handler.py:finish():845] shutting down handler
+2023-04-17 20:28:00,677 INFO    WriterThread:27316 [datastore.py:close():298] close: /home/boostfish/SUIM/wandb/run-20230417_202352-4xwrwwmh/run-4xwrwwmh.wandb
+2023-04-17 20:28:00,875 INFO    SenderThread:27316 [sender.py:finish():1550] shutting down sender
+2023-04-17 20:28:00,876 INFO    SenderThread:27316 [file_pusher.py:finish():168] shutting down file pusher
+2023-04-17 20:28:00,876 INFO    SenderThread:27316 [file_pusher.py:join():173] waiting for file pusher
