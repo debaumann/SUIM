@@ -1,0 +1,61 @@
+RSB
+(320, 240, 3)
+Traceback (most recent call last):
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 4215, in _get_op_def
+    return self._op_def_cache[type]
+KeyError: 'Placeholder'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/boostfish/SUIM/train_suimnet.py", line 37, in <module>
+    suimnet = SUIM_Net(base=base_, im_res=im_res_, n_classes=2)
+  File "/home/boostfish/SUIM/models/suim_net.py", line 132, in __init__
+    self.model = self.get_model_RSB(n_classes)
+  File "/home/boostfish/SUIM/models/suim_net.py", line 143, in get_model_RSB
+    img_input, features = Suim_Encoder_RSB(self.inp_shape, channels=3)
+  File "/home/boostfish/SUIM/models/suim_net.py", line 53, in Suim_Encoder_RSB
+    x = Activation('relu')(x)
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/keras/utils/traceback_utils.py", line 65, in error_handler
+    return fn(*args, **kwargs)
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/keras/engine/base_layer.py", line 1058, in __call__
+    return self._functional_construction_call(
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/keras/engine/base_layer.py", line 2572, in _functional_construction_call
+    outputs = self._keras_tensor_symbolic_call(
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/keras/engine/base_layer.py", line 2419, in _keras_tensor_symbolic_call
+    return self._infer_output_signature(
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/keras/engine/base_layer.py", line 2455, in _infer_output_signature
+    inputs = tf.nest.map_structure(
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/util/nest.py", line 917, in map_structure
+    structure[0], [func(*x) for x in entries],
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/util/nest.py", line 917, in <listcomp>
+    structure[0], [func(*x) for x in entries],
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/keras/engine/keras_tensor.py", line 648, in keras_tensor_to_placeholder
+    return x._to_placeholder()
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/keras/engine/keras_tensor.py", line 236, in _to_placeholder
+    return tf.nest.map_structure(
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/util/nest.py", line 917, in map_structure
+    structure[0], [func(*x) for x in entries],
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/util/nest.py", line 917, in <listcomp>
+    structure[0], [func(*x) for x in entries],
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/keras/engine/keras_tensor.py", line 234, in component_to_placeholder
+    return tf.compat.v1.placeholder(component.dtype, component.shape)
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/ops/array_ops.py", line 3361, in placeholder
+    return gen_array_ops.placeholder(dtype=dtype, shape=shape, name=name)
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/ops/gen_array_ops.py", line 6922, in placeholder
+    _, _, _op, _outputs = _op_def_library._apply_op_helper(
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/framework/op_def_library.py", line 795, in _apply_op_helper
+    op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/framework/func_graph.py", line 707, in _create_op_internal
+    return super()._create_op_internal(  # pylint: disable=protected-access
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 3814, in _create_op_internal
+    ret = Operation(
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 2113, in __init__
+    self._init_from_c_op(c_op=c_op, g=g)
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 2179, in _init_from_c_op
+    op_def = g._get_op_def(pywrap_tf_session.TF_OperationOpType(c_op))  # pylint: disable=protected-access
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/framework/ops.py", line 4218, in _get_op_def
+    with self._c_graph.get() as c_graph:
+  File "/home/boostfish/miniconda3/lib/python3.10/contextlib.py", line 142, in __exit__
+    next(self.gen)
+  File "/home/boostfish/miniconda3/lib/python3.10/site-packages/tensorflow/python/framework/c_api_util.py", line 68, in get
+    yield self._obj
+KeyboardInterrupt

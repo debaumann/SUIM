@@ -77,7 +77,7 @@ def getSaliency(mask):
             elif (mask[i,j,0]==1 and mask[i,j,1]==0 and mask[i,j,2]==0):
                 sal[i, j] = 1  
             elif (mask[i,j,0]==1 and mask[i,j,1]==1 and mask[i,j,2]==0):
-                sal[i, j] = 0   
+                sal[i, j] = 1
             elif (mask[i,j,0]==0 and mask[i,j,1]==1 and mask[i,j,2]==1):
                 sal[i, j] = 1  
             elif (mask[i,j,0]==0 and mask[i,j,1]==1 and mask[i,j,2]==0):
@@ -107,7 +107,7 @@ def processSUIMDataRFHW(img, mask, sal=False):
     return (img, m)
 
 
-def trainDataGenerator(batch_size, train_path, image_folder, mask_folder, aug_dict, image_color_mode="grayscale",
+def trainDataGenerator(batch_size, train_path, image_folder, mask_folder, aug_dict, image_color_mode="rgb",
                     mask_color_mode="grayscale", target_size=(256,256), sal=True):
     # data generator function for driving the training
     image_datagen = ImageDataGenerator(**aug_dict)
@@ -120,7 +120,7 @@ def trainDataGenerator(batch_size, train_path, image_folder, mask_folder, aug_di
         batch_size = batch_size,
         save_to_dir = None,
         save_prefix  = "image",
-        seed=1)
+        seed=69)
     # mask generator function for corresponding ground truth
     mask_datagen = ImageDataGenerator(**aug_dict)
     mask_generator = mask_datagen.flow_from_directory(
@@ -132,7 +132,7 @@ def trainDataGenerator(batch_size, train_path, image_folder, mask_folder, aug_di
         batch_size = batch_size,
         save_to_dir = None,
         save_prefix  = "mask",
-        seed = 1)
+        seed = 69)
     # make pairs and return
     for (img, mask) in zip(image_generator, mask_generator):
         img, mask_indiv = processSUIMDataRFHW(img, mask, sal)

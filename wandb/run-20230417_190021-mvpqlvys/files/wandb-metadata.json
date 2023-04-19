@@ -1,0 +1,77 @@
+{
+    "os": "Linux-5.15.0-46-generic-x86_64-with-glibc2.31",
+    "python": "3.10.9",
+    "heartbeatAt": "2023-04-17T17:00:23.218590",
+    "startedAt": "2023-04-17T17:00:21.669610",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/boostfish/SUIM/train_suimnet.py",
+    "codePath": "train_suimnet.py",
+    "git": {
+        "remote": "git@github.com:debaumann/SUIM.git",
+        "commit": "2f0ce048ddc9647207da5ffebc36c60512ce8c67"
+    },
+    "email": "debaumann@student.ethz.ch",
+    "root": "/home/boostfish/SUIM",
+    "host": "boostfish",
+    "username": "boostfish",
+    "executable": "/home/boostfish/miniconda3/bin/python",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2204.5237500000003,
+        "min": 400.0,
+        "max": 4200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 836.19,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2400.0,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2400.0,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2400.0,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2400.0,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2400.0,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2400.0,
+            "min": 400.0,
+            "max": 4200.0
+        },
+        {
+            "current": 2400.0,
+            "min": 400.0,
+            "max": 4200.0
+        }
+    ],
+    "disk": {
+        "total": 915.3232879638672,
+        "used": 23.224796295166016
+    },
+    "memory": {
+        "total": 15.29031753540039
+    }
+}

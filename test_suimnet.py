@@ -19,7 +19,7 @@ test_dir = "data/test/images/italy"
 
 ## sample and ckpt dir
 samples_dir = "data/test/output/"
-eval_dir = "data/test/output/eval_lr_001/"
+eval_dir = "data/test/output/eval_run_lr001/"
 RO_dir = samples_dir + "RO/"
 FB_dir = samples_dir + "FV/"
 WR_dir = samples_dir + "WR/"
@@ -64,6 +64,7 @@ def testGenerator():
         out_img[out_img<=0.5] = 0.
         print ("tested: {0}".format(p))
         #visualize 
+        print(np.shape(out_img))
         m=np.array(out_img[0,:,:,0])
         m = m+ np.array(out_img[0,:,:,1])
         # m = m+ np.array(out_img[0,:,:,2])
