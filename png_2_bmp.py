@@ -9,12 +9,12 @@ from utils.data_utils import getPaths
 
 
 convert_dir = "data/seg_masks"
-out_dir = "data/train_val/masks/"
+out_dir = "data/train_val/masks//"
 
 for p in getPaths(convert_dir):
         # read and scale inputs
         
-        img = Image.open(p).resize((864, 540))
+        img = Image.open(p).resize((853, 480))
         
         print(np.shape(img))
 

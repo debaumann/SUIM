@@ -8,7 +8,7 @@ import numpy as np
 import math
 from os.path import join, exists
 from keras import callbacks
-import time
+
 # local libs
 from models.suim_net import SUIM_Net
 from utils.data_utils import trainDataGenerator
@@ -16,9 +16,9 @@ from utils.data_utils import trainDataGenerator
 import wandb
 from wandb.keras import WandbMetricsLogger
 
-init_random = int(time.time())
 
-wandb.init(config={"bs":11})
+
+wandb.init(config={"bs":10})
 ## dataset directory
 dataset_name = "suim"
 train_dir = "data/train_val/"
@@ -28,7 +28,7 @@ ckpt_dir = "ckpt/"
 base_ = 'RSB' # or 'RSB'
 if base_=='RSB':
     im_res_ = (320, 240, 3) 
-    ckpt_name = "suimnet_img_logger.hdf5"
+    ckpt_name = "suimnet_cluster_train.hdf5"
 else: 
     im_res_ = (320, 256, 3)
     ckpt_name = "suimnet_vgg.hdf5"
@@ -36,12 +36,12 @@ model_ckpt_name = join(ckpt_dir, ckpt_name)
 if not exists(ckpt_dir): os.makedirs(ckpt_dir)
 
 ## initialize model
-steps_per_epoch = 500,
+steps_per_epoch = 5000,
 suimnet = SUIM_Net(base=base_, im_res=im_res_, n_classes=2)
 model = suimnet.model
 print (model.summary())
 ## load saved model
-model.load_weights(join("ckpt/saved/", "suimnet_rsb_500_24_lr_001.hdf5"))
+# model.load_weights(join("ckpt/saved/", "suimnet_rsb_500_24_lr_001.hdf5"))
 class WandbCallback(callbacks.Callback):
     def __init__(self,data_generator, num_samples):
         self.data_generator=data_generator
@@ -72,7 +72,7 @@ class WandbCallback(callbacks.Callback):
             })
 
 batch_size = 8
-num_epochs = 20
+num_epochs = 50
 # setup data generator
 data_gen_args = dict(rotation_range=0.2,
                     width_shift_range=0.05,
@@ -109,7 +109,7 @@ img_gen = trainDataGenerator(batch_size, # batch_size
 
 ## fit model
 model.fit(train_gen, 
-                    steps_per_epoch = 1,
+                    steps_per_epoch = 5000,
                     epochs = num_epochs,
                     callbacks = [model_checkpoint,WandbMetricsLogger(),WandbCallback(img_gen,8)])
 
