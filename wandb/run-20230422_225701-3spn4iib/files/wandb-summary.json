@@ -1,0 +1,1 @@
+{"prediction": {"_type": "image-file", "sha256": "f8c5a6cc2ad126bb5c5fc85ffdb8116412b2d7a00dc4a8f0fff1392fcc82881d", "size": 148253, "path": "media/images/prediction_332_f8c5a6cc2ad126bb5c5f.png", "format": "png", "width": 960, "height": 240, "caption": "left: pred_mask / mid: gt / right: og_image "}, "_timestamp": 1682404147.7429523, "_runtime": 207126.7227203846, "_step": 332}
