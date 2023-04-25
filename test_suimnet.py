@@ -44,6 +44,7 @@ suimnet = SUIM_Net(base=base_, im_res=im_res_, n_classes=2)
 model = suimnet.model
 print (model.summary())
 model.load_weights(join("ckpt/saved/", ckpt_name))
+print("works here")
 
 
 im_h, im_w = im_res_[1], im_res_[0]
