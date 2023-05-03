@@ -109,7 +109,7 @@ img_gen = trainDataGenerator(batch_size, # batch_size
 
 ## fit model
 model.fit(train_gen, 
-                    steps_per_epoch = 5000,
+                    steps_per_epoch = 500,
                     epochs = num_epochs,
                     callbacks = [model_checkpoint,WandbMetricsLogger(),WandbCallback(img_gen,8)])
 
