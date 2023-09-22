@@ -1,0 +1,195 @@
+2023-09-22 17:05:06,313 INFO    StreamThr :11650 [internal.py:wandb_internal():86] W&B internal server running at pid: 11650, started at: 2023-09-22 17:05:06.313456
+2023-09-22 17:05:06,314 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: status
+2023-09-22 17:05:06,315 INFO    WriterThread:11650 [datastore.py:open_for_write():85] open: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/run-vj170awy.wandb
+2023-09-22 17:05:06,316 DEBUG   SenderThread:11650 [sender.py:send():380] send: header
+2023-09-22 17:05:06,323 DEBUG   SenderThread:11650 [sender.py:send():380] send: run
+2023-09-22 17:05:06,764 INFO    SenderThread:11650 [dir_watcher.py:__init__():211] watching files in: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files
+2023-09-22 17:05:06,765 INFO    SenderThread:11650 [sender.py:_start_run_threads():1122] run started: vj170awy with start time 1695395106.313333
+2023-09-22 17:05:06,771 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: check_version
+2023-09-22 17:05:06,772 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: check_version
+2023-09-22 17:05:06,874 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: run_start
+2023-09-22 17:05:06,877 DEBUG   HandlerThread:11650 [system_info.py:__init__():32] System info init
+2023-09-22 17:05:06,877 DEBUG   HandlerThread:11650 [system_info.py:__init__():47] System info init done
+2023-09-22 17:05:06,877 INFO    HandlerThread:11650 [system_monitor.py:start():181] Starting system monitor
+2023-09-22 17:05:06,877 INFO    SystemMonitor:11650 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-22 17:05:06,878 INFO    SystemMonitor:11650 [interfaces.py:start():190] Started cpu monitoring
+2023-09-22 17:05:06,878 INFO    HandlerThread:11650 [system_monitor.py:probe():201] Collecting system info
+2023-09-22 17:05:06,879 INFO    SystemMonitor:11650 [interfaces.py:start():190] Started disk monitoring
+2023-09-22 17:05:06,879 INFO    SystemMonitor:11650 [interfaces.py:start():190] Started gpu monitoring
+2023-09-22 17:05:06,880 INFO    SystemMonitor:11650 [interfaces.py:start():190] Started memory monitoring
+2023-09-22 17:05:06,881 INFO    SystemMonitor:11650 [interfaces.py:start():190] Started network monitoring
+2023-09-22 17:05:06,923 DEBUG   HandlerThread:11650 [system_info.py:probe():196] Probing system
+2023-09-22 17:05:06,924 DEBUG   HandlerThread:11650 [system_info.py:_probe_git():181] Probing git
+2023-09-22 17:05:06,933 DEBUG   HandlerThread:11650 [system_info.py:_probe_git():189] Probing git done
+2023-09-22 17:05:06,933 DEBUG   HandlerThread:11650 [system_info.py:probe():244] Probing system done
+2023-09-22 17:05:06,933 DEBUG   HandlerThread:11650 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-46-generic-x86_64-with-glibc2.31', 'python': '3.9.18', 'heartbeatAt': '2023-09-22T15:05:06.923690', 'startedAt': '2023-09-22T15:05:06.310982', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/workfish/SUIM/train_unet.py', 'codePathLocal': 'train_unet.py', 'codePath': 'train_unet.py', 'git': {'remote': 'git@github.com:debaumann/SUIM.git', 'commit': 'f1cd2172951323b1e7325899082dd430b6905470'}, 'email': None, 'root': '/home/workfish/SUIM', 'host': 'workfish-B450M-H', 'username': 'workfish', 'executable': '/home/workfish/miniconda3/envs/tf/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2874.488, 'min': 2200.0, 'max': 3700.0}, 'cpu_freq_per_core': [{'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2800.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2513.552, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}], 'disk': {'/': {'total': 915.3232879638672, 'used': 27.863502502441406}}, 'gpu': 'NVIDIA GeForce RTX 2070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070', 'memory_total': 8366784512}], 'memory': {'total': 15.544548034667969}}
+2023-09-22 17:05:06,933 INFO    HandlerThread:11650 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-22 17:05:06,933 INFO    HandlerThread:11650 [system_monitor.py:probe():214] Publishing system info
+2023-09-22 17:05:06,933 DEBUG   HandlerThread:11650 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-09-22 17:05:06,933 DEBUG   HandlerThread:11650 [system_info.py:_save_pip():68] Saving pip packages done
+2023-09-22 17:05:06,933 DEBUG   HandlerThread:11650 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-09-22 17:05:07,765 INFO    Thread-12 :11650 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/requirements.txt
+2023-09-22 17:05:07,766 INFO    Thread-12 :11650 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/conda-environment.yaml
+2023-09-22 17:05:07,997 DEBUG   HandlerThread:11650 [system_info.py:_save_conda():87] Saving conda packages done
+2023-09-22 17:05:07,997 INFO    HandlerThread:11650 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-22 17:05:08,002 DEBUG   SenderThread:11650 [sender.py:send():380] send: files
+2023-09-22 17:05:08,002 INFO    SenderThread:11650 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-09-22 17:05:08,006 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-22 17:05:08,006 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: stop_status
+2023-09-22 17:05:08,007 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-22 17:05:08,261 DEBUG   SenderThread:11650 [sender.py:send():380] send: telemetry
+2023-09-22 17:05:08,532 INFO    wandb-upload_0:11650 [upload_job.py:push():131] Uploaded file /tmp/tmpgeh4mu33wandb/nsxktaiw-wandb-metadata.json
+2023-09-22 17:05:08,719 DEBUG   SenderThread:11650 [sender.py:send():380] send: telemetry
+2023-09-22 17:05:08,719 DEBUG   SenderThread:11650 [sender.py:send():380] send: metric
+2023-09-22 17:05:08,719 DEBUG   SenderThread:11650 [sender.py:send():380] send: telemetry
+2023-09-22 17:05:08,719 DEBUG   SenderThread:11650 [sender.py:send():380] send: metric
+2023-09-22 17:05:08,719 WARNING SenderThread:11650 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-09-22 17:05:08,765 INFO    Thread-12 :11650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/conda-environment.yaml
+2023-09-22 17:05:08,765 INFO    Thread-12 :11650 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/output.log
+2023-09-22 17:05:08,765 INFO    Thread-12 :11650 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/wandb-metadata.json
+2023-09-22 17:05:10,765 INFO    Thread-12 :11650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/output.log
+2023-09-22 17:05:11,700 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: status_report
+2023-09-22 17:05:12,766 INFO    Thread-12 :11650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/output.log
+2023-09-22 17:05:16,701 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: status_report
+2023-09-22 17:05:18,740 DEBUG   SenderThread:11650 [sender.py:send():380] send: exit
+2023-09-22 17:05:18,740 INFO    SenderThread:11650 [sender.py:send_exit():585] handling exit code: 1
+2023-09-22 17:05:18,740 INFO    SenderThread:11650 [sender.py:send_exit():587] handling runtime: 11
+2023-09-22 17:05:18,741 INFO    SenderThread:11650 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-22 17:05:18,741 INFO    SenderThread:11650 [sender.py:send_exit():593] send defer
+2023-09-22 17:05:18,741 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:18,741 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-22 17:05:18,741 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:18,741 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-09-22 17:05:18,741 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 1
+2023-09-22 17:05:18,741 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:18,742 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-22 17:05:18,742 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:18,742 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-09-22 17:05:18,742 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 2
+2023-09-22 17:05:18,742 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:18,742 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-22 17:05:18,742 INFO    HandlerThread:11650 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-22 17:05:18,742 INFO    HandlerThread:11650 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-22 17:05:18,742 INFO    HandlerThread:11650 [interfaces.py:finish():202] Joined disk monitor
+2023-09-22 17:05:18,742 DEBUG   SystemMonitor:11650 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-22 17:05:18,742 DEBUG   SystemMonitor:11650 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-22 17:05:18,742 DEBUG   SystemMonitor:11650 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-22 17:05:18,767 INFO    Thread-12 :11650 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/wandb-summary.json
+2023-09-22 17:05:18,771 INFO    HandlerThread:11650 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-22 17:05:18,771 INFO    HandlerThread:11650 [interfaces.py:finish():202] Joined memory monitor
+2023-09-22 17:05:18,772 INFO    HandlerThread:11650 [interfaces.py:finish():202] Joined network monitor
+2023-09-22 17:05:18,772 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:18,772 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-09-22 17:05:18,772 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 3
+2023-09-22 17:05:18,772 DEBUG   SenderThread:11650 [sender.py:send():380] send: stats
+2023-09-22 17:05:18,772 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:18,772 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-22 17:05:18,772 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:18,772 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-09-22 17:05:18,772 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 4
+2023-09-22 17:05:18,772 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:18,772 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-22 17:05:18,772 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:18,772 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-09-22 17:05:18,772 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 5
+2023-09-22 17:05:18,772 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:18,773 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-22 17:05:18,773 DEBUG   SenderThread:11650 [sender.py:send():380] send: summary
+2023-09-22 17:05:18,773 INFO    SenderThread:11650 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-22 17:05:18,773 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:18,773 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-09-22 17:05:18,773 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 6
+2023-09-22 17:05:18,773 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:18,773 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-22 17:05:18,773 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:18,773 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-09-22 17:05:18,777 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: status_report
+2023-09-22 17:05:19,042 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 7
+2023-09-22 17:05:19,042 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:19,042 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-22 17:05:19,042 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:19,042 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-09-22 17:05:19,740 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-22 17:05:19,768 INFO    Thread-12 :11650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/config.yaml
+2023-09-22 17:05:19,768 INFO    Thread-12 :11650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/wandb-summary.json
+2023-09-22 17:05:20,701 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 8
+2023-09-22 17:05:20,702 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: poll_exit
+2023-09-22 17:05:20,702 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:20,702 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-22 17:05:20,702 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:20,702 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-09-22 17:05:20,702 INFO    SenderThread:11650 [job_builder.py:build():281] Attempting to build job artifact
+2023-09-22 17:05:20,703 INFO    SenderThread:11650 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-09-22 17:05:20,704 INFO    SenderThread:11650 [job_builder.py:build():369] adding wandb-job metadata file
+2023-09-22 17:05:20,714 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 9
+2023-09-22 17:05:20,715 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:20,715 DEBUG   SenderThread:11650 [sender.py:send():380] send: artifact
+2023-09-22 17:05:20,715 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-22 17:05:20,741 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-22 17:05:20,768 INFO    Thread-12 :11650 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/output.log
+2023-09-22 17:05:21,724 INFO    SenderThread:11650 [sender.py:send_artifact():1456] sent artifact job-git_github.com_debaumann_SUIM.git_train_unet.py - {'id': 'QXJ0aWZhY3Q6NTc5NjM5NTcz', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjk5OTQzODkx', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTc5NjM5NTcz', 'versionIndex': 1}}}
+2023-09-22 17:05:21,724 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:21,724 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-09-22 17:05:21,724 INFO    SenderThread:11650 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-09-22 17:05:21,768 INFO    SenderThread:11650 [dir_watcher.py:finish():388] scan: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files
+2023-09-22 17:05:21,769 INFO    SenderThread:11650 [dir_watcher.py:finish():402] scan save: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/wandb-summary.json wandb-summary.json
+2023-09-22 17:05:21,769 INFO    SenderThread:11650 [dir_watcher.py:finish():402] scan save: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/config.yaml config.yaml
+2023-09-22 17:05:21,769 INFO    SenderThread:11650 [dir_watcher.py:finish():402] scan save: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/requirements.txt requirements.txt
+2023-09-22 17:05:21,771 INFO    SenderThread:11650 [dir_watcher.py:finish():402] scan save: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/wandb-metadata.json wandb-metadata.json
+2023-09-22 17:05:21,775 INFO    SenderThread:11650 [dir_watcher.py:finish():402] scan save: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/conda-environment.yaml conda-environment.yaml
+2023-09-22 17:05:21,775 INFO    SenderThread:11650 [dir_watcher.py:finish():402] scan save: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/output.log output.log
+2023-09-22 17:05:21,775 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 10
+2023-09-22 17:05:21,775 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: poll_exit
+2023-09-22 17:05:21,776 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:21,778 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 10
+2023-09-22 17:05:21,779 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:21,779 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-09-22 17:05:21,779 INFO    SenderThread:11650 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-22 17:05:22,140 INFO    wandb-upload_0:11650 [upload_job.py:push():131] Uploaded file /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/wandb-summary.json
+2023-09-22 17:05:22,206 INFO    wandb-upload_1:11650 [upload_job.py:push():131] Uploaded file /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/config.yaml
+2023-09-22 17:05:22,240 INFO    wandb-upload_4:11650 [upload_job.py:push():131] Uploaded file /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/output.log
+2023-09-22 17:05:22,241 INFO    wandb-upload_3:11650 [upload_job.py:push():131] Uploaded file /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/conda-environment.yaml
+2023-09-22 17:05:22,245 INFO    wandb-upload_2:11650 [upload_job.py:push():131] Uploaded file /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/files/requirements.txt
+2023-09-22 17:05:22,445 INFO    Thread-11 :11650 [sender.py:transition_state():613] send defer: 11
+2023-09-22 17:05:22,445 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:22,446 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 11
+2023-09-22 17:05:22,446 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:22,446 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-09-22 17:05:22,446 INFO    SenderThread:11650 [file_pusher.py:join():181] waiting for file pusher
+2023-09-22 17:05:22,446 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 12
+2023-09-22 17:05:22,446 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:22,446 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 12
+2023-09-22 17:05:22,447 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:22,447 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-09-22 17:05:22,447 INFO    SenderThread:11650 [file_stream.py:finish():595] file stream finish called
+2023-09-22 17:05:22,643 INFO    SenderThread:11650 [file_stream.py:finish():599] file stream finish is done
+2023-09-22 17:05:22,643 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 13
+2023-09-22 17:05:22,643 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:22,643 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 13
+2023-09-22 17:05:22,644 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:22,644 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-09-22 17:05:22,644 INFO    SenderThread:11650 [sender.py:transition_state():613] send defer: 14
+2023-09-22 17:05:22,644 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: defer
+2023-09-22 17:05:22,644 INFO    HandlerThread:11650 [handler.py:handle_request_defer():170] handle defer: 14
+2023-09-22 17:05:22,644 DEBUG   SenderThread:11650 [sender.py:send():380] send: final
+2023-09-22 17:05:22,644 DEBUG   SenderThread:11650 [sender.py:send():380] send: footer
+2023-09-22 17:05:22,644 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: defer
+2023-09-22 17:05:22,644 INFO    SenderThread:11650 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-09-22 17:05:22,645 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-22 17:05:22,645 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: poll_exit
+2023-09-22 17:05:22,645 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: server_info
+2023-09-22 17:05:22,645 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: get_summary
+2023-09-22 17:05:22,645 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: server_info
+2023-09-22 17:05:22,647 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: sampled_history
+2023-09-22 17:05:22,647 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-22 17:05:22,648 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: job_info
+2023-09-22 17:05:22,806 DEBUG   SenderThread:11650 [sender.py:send_request():407] send_request: job_info
+2023-09-22 17:05:22,807 INFO    MainThread:11650 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2023-09-22 17:05:22,807 INFO    MainThread:11650 [wandb_run.py:_footer_history_summary_info():3586] rendering summary
+2023-09-22 17:05:22,807 INFO    MainThread:11650 [wandb_run.py:_footer_sync_info():3513] logging synced files
+2023-09-22 17:05:22,807 DEBUG   HandlerThread:11650 [handler.py:handle_request():144] handle_request: shutdown
+2023-09-22 17:05:22,807 INFO    HandlerThread:11650 [handler.py:finish():844] shutting down handler
+2023-09-22 17:05:23,648 INFO    WriterThread:11650 [datastore.py:close():294] close: /home/workfish/SUIM/wandb/run-20230922_170506-vj170awy/run-vj170awy.wandb
+2023-09-22 17:05:23,807 INFO    SenderThread:11650 [sender.py:finish():1534] shutting down sender
+2023-09-22 17:05:23,807 INFO    SenderThread:11650 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-22 17:05:23,807 INFO    SenderThread:11650 [file_pusher.py:join():181] waiting for file pusher

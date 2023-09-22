@@ -4,7 +4,7 @@
 """
 import tensorflow as tf
 from keras.models import Model
-from keras.layers.convolutional import UpSampling2D, Conv2D
+from keras.layers import UpSampling2D, Conv2D
 from tensorflow.keras.layers import  Input,  BatchNormalization, Activation, MaxPooling2D
 from keras.layers import add, Lambda, Concatenate, ZeroPadding2D
 from keras.optimizers import Adam, SGD

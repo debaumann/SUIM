@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/home/workfish/SUIM/train_unet.py", line 27, in <module>
+    model = UNet0(input_size=(im_res_[1], im_res_[0], 3), no_of_class=2)
+  File "/home/workfish/SUIM/models/unet.py", line 49, in UNet0
+    conv9 = Conv2D(64, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(merge9)
+  File "/home/workfish/miniconda3/envs/tf/lib/python3.9/site-packages/keras/src/dtensor/utils.py", line 96, in _wrap_function
+    init_method(layer_instance, *args, **kwargs)
+  File "/home/workfish/miniconda3/envs/tf/lib/python3.9/site-packages/keras/src/layers/convolutional/conv2d.py", line 179, in __init__
+    super().__init__(
+  File "/home/workfish/miniconda3/envs/tf/lib/python3.9/site-packages/keras/src/layers/convolutional/base_conv.py", line 118, in __init__
+    super().__init__(
+  File "/home/workfish/miniconda3/envs/tf/lib/python3.9/site-packages/tensorflow/python/trackable/base.py", line 204, in _method_wrapper
+    result = method(self, *args, **kwargs)
+  File "/home/workfish/miniconda3/envs/tf/lib/python3.9/site-packages/keras/src/engine/base_layer.py", line 388, in __init__
+    self._thread_local = threading.local()
+KeyboardInterrupt
