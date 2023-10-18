@@ -15,7 +15,7 @@ from wandb.keras import WandbMetricsLogger
 ## dataset directory
 dataset_name = "suim"
 train_dir = "data/train_val/"
-wandb.init(config={"bs":10})
+wandb.init(config={"bs":15})
 ## ckpt directory
 ckpt_dir = "ckpt/"
 im_res_ = (320, 240, 3)
@@ -58,7 +58,7 @@ class WandbCallback(callbacks.Callback):
                 "prediction": wandb.Image(img_array, caption="left: pred_mask / mid: gt / right: og_image ")  
             })
 
-batch_size = 2
+batch_size = 4
 num_epochs = 50
 # setup data generator
 data_gen_args = dict(rotation_range=0.2,
@@ -96,7 +96,7 @@ img_gen = trainDataGenerator(batch_size, # batch_size
 
 ## fit model
 model.fit(train_gen, 
-                    steps_per_epoch = 1,
+                    steps_per_epoch = 300,
                     epochs = num_epochs,
                     callbacks = [model_checkpoint,WandbMetricsLogger(),WandbCallback(img_gen,2)])
 # batch_size = 2

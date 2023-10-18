@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/home/workfish/SUIM/train_unet.py", line 27, in <module>
+    model = UNet0(input_size=(im_res_[1], im_res_[0], 3), no_of_class=2)
+  File "/home/workfish/SUIM/models/unet.py", line 29, in UNet0
+    conv5 = Conv2D(1024, 3, activation = 'relu', padding = 'same', kernel_initializer = 'he_normal')(conv5)
+  File "/home/workfish/miniconda3/envs/tf/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/workfish/miniconda3/envs/tf/lib/python3.9/site-packages/keras/src/backend.py", line 2144, in truncated_normal
+    return tf.random.stateless_truncated_normal(
+tensorflow.python.framework.errors_impl.ResourceExhaustedError: {{function_node __wrapped__StatelessTruncatedNormalV2_device_/job:localhost/replica:0/task:0/device:GPU:0}} OOM when allocating tensor with shape[3,3,1024,1024] and type float on /job:localhost/replica:0/task:0/device:GPU:0 by allocator GPU_0_bfc [Op:StatelessTruncatedNormalV2] name:

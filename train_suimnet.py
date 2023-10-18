@@ -71,7 +71,7 @@ class WandbCallback(callbacks.Callback):
                 "prediction": wandb.Image(img_array, caption="left: pred_mask / mid: gt / right: og_image ")  
             })
 
-batch_size = 8
+batch_size = 4
 num_epochs = 50
 # setup data generator
 data_gen_args = dict(rotation_range=0.2,

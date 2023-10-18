@@ -1,0 +1,412 @@
+2023-09-26 18:35:34,544 INFO    StreamThr :9491 [internal.py:wandb_internal():86] W&B internal server running at pid: 9491, started at: 2023-09-26 18:35:34.544427
+2023-09-26 18:35:34,546 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status
+2023-09-26 18:35:34,548 INFO    WriterThread:9491 [datastore.py:open_for_write():85] open: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/run-s2zdvorj.wandb
+2023-09-26 18:35:34,548 DEBUG   SenderThread:9491 [sender.py:send():380] send: header
+2023-09-26 18:35:34,555 DEBUG   SenderThread:9491 [sender.py:send():380] send: run
+2023-09-26 18:35:35,116 INFO    SenderThread:9491 [dir_watcher.py:__init__():211] watching files in: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files
+2023-09-26 18:35:35,116 INFO    SenderThread:9491 [sender.py:_start_run_threads():1122] run started: s2zdvorj with start time 1695746134.544487
+2023-09-26 18:35:35,122 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: check_version
+2023-09-26 18:35:35,122 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: check_version
+2023-09-26 18:35:35,211 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: run_start
+2023-09-26 18:35:35,213 DEBUG   HandlerThread:9491 [system_info.py:__init__():32] System info init
+2023-09-26 18:35:35,213 DEBUG   HandlerThread:9491 [system_info.py:__init__():47] System info init done
+2023-09-26 18:35:35,213 INFO    HandlerThread:9491 [system_monitor.py:start():181] Starting system monitor
+2023-09-26 18:35:35,213 INFO    SystemMonitor:9491 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-26 18:35:35,214 INFO    HandlerThread:9491 [system_monitor.py:probe():201] Collecting system info
+2023-09-26 18:35:35,214 INFO    SystemMonitor:9491 [interfaces.py:start():190] Started cpu monitoring
+2023-09-26 18:35:35,214 INFO    SystemMonitor:9491 [interfaces.py:start():190] Started disk monitoring
+2023-09-26 18:35:35,215 INFO    SystemMonitor:9491 [interfaces.py:start():190] Started gpu monitoring
+2023-09-26 18:35:35,215 INFO    SystemMonitor:9491 [interfaces.py:start():190] Started memory monitoring
+2023-09-26 18:35:35,216 INFO    SystemMonitor:9491 [interfaces.py:start():190] Started network monitoring
+2023-09-26 18:35:35,241 DEBUG   HandlerThread:9491 [system_info.py:probe():196] Probing system
+2023-09-26 18:35:35,242 DEBUG   HandlerThread:9491 [system_info.py:_probe_git():181] Probing git
+2023-09-26 18:35:35,250 DEBUG   HandlerThread:9491 [system_info.py:_probe_git():189] Probing git done
+2023-09-26 18:35:35,250 DEBUG   HandlerThread:9491 [system_info.py:probe():244] Probing system done
+2023-09-26 18:35:35,250 DEBUG   HandlerThread:9491 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-46-generic-x86_64-with-glibc2.31', 'python': '3.9.18', 'heartbeatAt': '2023-09-26T16:35:35.241611', 'startedAt': '2023-09-26T16:35:34.540175', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/workfish/SUIM/train_unet.py', 'codePathLocal': 'train_unet.py', 'codePath': 'train_unet.py', 'git': {'remote': 'git@github.com:debaumann/SUIM.git', 'commit': '9cbaa0e26eab5c944670720fdedadb70039e21d5'}, 'email': 'debaumann@ethz.ch', 'root': '/home/workfish/SUIM', 'host': 'workfish-B450M-H', 'username': 'workfish', 'executable': '/home/workfish/miniconda3/envs/tf/bin/python3', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2518.2845, 'min': 2200.0, 'max': 3700.0}, 'cpu_freq_per_core': [{'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2807.297, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3700.0}], 'disk': {'/': {'total': 915.3232879638672, 'used': 28.119590759277344}}, 'gpu': 'NVIDIA GeForce RTX 2070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 2070', 'memory_total': 8366784512}], 'memory': {'total': 15.544548034667969}}
+2023-09-26 18:35:35,250 INFO    HandlerThread:9491 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-26 18:35:35,250 INFO    HandlerThread:9491 [system_monitor.py:probe():214] Publishing system info
+2023-09-26 18:35:35,250 DEBUG   HandlerThread:9491 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-09-26 18:35:35,250 DEBUG   HandlerThread:9491 [system_info.py:_save_pip():68] Saving pip packages done
+2023-09-26 18:35:35,250 DEBUG   HandlerThread:9491 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-09-26 18:35:36,118 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/conda-environment.yaml
+2023-09-26 18:35:36,118 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/requirements.txt
+2023-09-26 18:35:36,292 DEBUG   HandlerThread:9491 [system_info.py:_save_conda():87] Saving conda packages done
+2023-09-26 18:35:36,293 INFO    HandlerThread:9491 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-26 18:35:36,297 DEBUG   SenderThread:9491 [sender.py:send():380] send: files
+2023-09-26 18:35:36,297 INFO    SenderThread:9491 [sender.py:_save_file():1378] saving file wandb-metadata.json with policy now
+2023-09-26 18:35:36,301 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:35:36,301 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:35:36,303 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:35:36,614 DEBUG   SenderThread:9491 [sender.py:send():380] send: telemetry
+2023-09-26 18:35:36,993 DEBUG   SenderThread:9491 [sender.py:send():380] send: telemetry
+2023-09-26 18:35:36,993 DEBUG   SenderThread:9491 [sender.py:send():380] send: metric
+2023-09-26 18:35:36,993 DEBUG   SenderThread:9491 [sender.py:send():380] send: telemetry
+2023-09-26 18:35:36,993 DEBUG   SenderThread:9491 [sender.py:send():380] send: metric
+2023-09-26 18:35:36,993 WARNING SenderThread:9491 [sender.py:send_metric():1329] Seen metric with glob (shouldn't happen)
+2023-09-26 18:35:37,010 INFO    wandb-upload_0:9491 [upload_job.py:push():131] Uploaded file /tmp/tmp1uj82uguwandb/pim5g831-wandb-metadata.json
+2023-09-26 18:35:37,117 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/conda-environment.yaml
+2023-09-26 18:35:37,117 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/wandb-metadata.json
+2023-09-26 18:35:37,117 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:35:39,117 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:35:40,027 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:35:45,680 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:35:47,119 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:35:50,681 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:35:51,352 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:35:51,352 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:35:51,408 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:35:56,169 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:35:57,121 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:35:59,121 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:36:01,215 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:36:03,122 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:36:06,218 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:36:06,367 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:36:06,434 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:36:06,535 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:36:07,123 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/config.yaml
+2023-09-26 18:36:11,124 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:36:11,615 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:36:17,125 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:36:17,289 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:36:21,396 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:36:21,396 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:36:21,502 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:36:22,668 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:36:25,126 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:36:27,852 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:36:33,128 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:36:33,531 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:36:35,216 DEBUG   SystemMonitor:9491 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-26 18:36:35,217 DEBUG   SenderThread:9491 [sender.py:send():380] send: stats
+2023-09-26 18:36:36,324 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:36:36,324 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:36:36,467 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:36:38,648 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:36:41,129 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:36:43,854 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:36:47,131 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:36:49,422 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:36:51,390 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:36:51,390 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:36:51,461 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:36:55,132 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:36:55,351 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:37:00,352 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:37:03,134 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:37:05,217 DEBUG   SenderThread:9491 [sender.py:send():380] send: stats
+2023-09-26 18:37:06,218 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:37:06,349 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:37:06,350 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:37:06,451 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:37:11,135 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:37:11,746 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:37:17,039 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:37:17,136 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:37:21,360 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:37:21,360 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:37:21,451 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:37:22,628 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:37:25,138 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:37:28,615 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:37:33,139 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:37:34,119 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:37:35,218 DEBUG   SenderThread:9491 [sender.py:send():380] send: stats
+2023-09-26 18:37:36,395 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:37:36,396 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:37:36,477 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:37:39,607 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:37:41,141 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:37:44,607 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:37:47,142 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:37:50,577 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:37:51,390 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:37:51,391 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:37:51,529 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:37:55,143 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:37:55,758 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:38:00,759 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:38:03,145 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:38:05,218 DEBUG   SenderThread:9491 [sender.py:send():380] send: stats
+2023-09-26 18:38:06,218 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:38:06,362 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:38:06,363 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:38:06,476 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:38:11,147 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:38:11,868 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:38:17,148 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:38:17,347 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:38:21,378 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:38:21,378 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:38:21,596 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:38:22,685 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:38:25,150 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:38:28,528 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:38:33,151 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:38:34,008 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:38:35,218 DEBUG   SenderThread:9491 [sender.py:send():380] send: stats
+2023-09-26 18:38:36,429 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:38:36,429 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:38:36,530 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:38:39,999 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:38:41,153 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:38:44,999 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:38:50,155 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:38:50,814 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:38:51,434 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:38:51,434 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:38:51,515 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:38:56,156 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:38:56,590 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:39:01,591 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:39:04,158 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:39:05,219 DEBUG   SenderThread:9491 [sender.py:send():380] send: stats
+2023-09-26 18:39:06,398 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:39:06,399 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:39:06,521 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:39:06,615 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:39:11,782 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:39:12,160 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:39:16,782 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:39:20,161 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:39:21,403 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:39:21,404 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:39:21,571 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:39:22,628 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:39:27,825 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:39:28,163 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:39:33,271 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:39:34,164 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:39:35,219 DEBUG   SenderThread:9491 [sender.py:send():380] send: stats
+2023-09-26 18:39:36,393 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:39:36,394 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:39:36,540 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:39:38,684 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:39:42,166 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:39:44,672 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:39:48,167 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:39:50,567 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:39:51,439 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:39:51,439 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:39:51,551 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:39:55,663 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:39:56,168 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:40:00,664 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:40:04,170 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:40:05,220 DEBUG   SenderThread:9491 [sender.py:send():380] send: stats
+2023-09-26 18:40:06,220 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:40:06,403 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:40:06,403 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:40:06,521 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:40:11,968 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:40:12,171 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:40:17,917 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:40:20,173 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:40:21,450 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:40:21,450 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:40:21,536 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:40:23,752 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:40:26,174 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:40:29,675 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:40:34,176 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:40:35,008 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:40:35,220 DEBUG   SenderThread:9491 [sender.py:send():380] send: stats
+2023-09-26 18:40:36,460 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:40:36,461 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:40:36,551 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:40:40,395 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:40:42,177 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:40:45,396 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:40:48,178 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:40:50,491 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:40:51,424 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:40:51,424 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:40:51,531 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:40:56,180 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:40:56,368 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:41:01,678 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:41:02,181 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:41:05,220 DEBUG   SenderThread:9491 [sender.py:send():380] send: stats
+2023-09-26 18:41:06,511 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:41:06,511 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:41:06,572 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:41:06,798 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:41:10,182 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:41:12,401 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:41:17,805 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:41:18,184 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:41:21,568 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:41:21,569 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:41:21,589 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:41:23,266 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:41:26,186 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:41:28,456 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:41:34,032 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:41:34,187 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:41:35,221 DEBUG   SenderThread:9491 [sender.py:send():380] send: stats
+2023-09-26 18:41:36,507 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:41:36,507 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:41:36,623 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:41:39,448 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:41:40,188 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:41:44,448 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:41:48,190 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:41:50,343 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:41:51,568 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-26 18:41:51,568 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: stop_status
+2023-09-26 18:41:51,588 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:41:55,516 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:41:56,191 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:41:57,788 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: partial_history
+2023-09-26 18:41:57,789 DEBUG   SenderThread:9491 [sender.py:send():380] send: metric
+2023-09-26 18:41:57,789 DEBUG   SenderThread:9491 [sender.py:send():380] send: metric
+2023-09-26 18:41:57,789 DEBUG   SenderThread:9491 [sender.py:send():380] send: metric
+2023-09-26 18:41:57,789 DEBUG   SenderThread:9491 [sender.py:send():380] send: history
+2023-09-26 18:41:57,790 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: summary_record
+2023-09-26 18:41:57,790 INFO    SenderThread:9491 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-26 18:41:58,192 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_created():271] file/dir created: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/wandb-summary.json
+2023-09-26 18:42:01,120 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:42:02,193 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:42:03,290 DEBUG   SenderThread:9491 [sender.py:send():380] send: exit
+2023-09-26 18:42:03,290 INFO    SenderThread:9491 [sender.py:send_exit():585] handling exit code: 255
+2023-09-26 18:42:03,291 INFO    SenderThread:9491 [sender.py:send_exit():587] handling runtime: 388
+2023-09-26 18:42:03,291 INFO    SenderThread:9491 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-26 18:42:03,291 INFO    SenderThread:9491 [sender.py:send_exit():593] send defer
+2023-09-26 18:42:03,291 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:03,291 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-26 18:42:03,291 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:03,291 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 0
+2023-09-26 18:42:03,291 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 1
+2023-09-26 18:42:03,292 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:03,292 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-26 18:42:03,292 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:03,292 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 1
+2023-09-26 18:42:03,292 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 2
+2023-09-26 18:42:03,292 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:03,292 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-26 18:42:03,292 INFO    HandlerThread:9491 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-26 18:42:03,292 DEBUG   SystemMonitor:9491 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-26 18:42:03,292 INFO    HandlerThread:9491 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-26 18:42:03,292 DEBUG   SystemMonitor:9491 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-26 18:42:03,292 INFO    HandlerThread:9491 [interfaces.py:finish():202] Joined disk monitor
+2023-09-26 18:42:03,317 INFO    HandlerThread:9491 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-26 18:42:03,317 INFO    HandlerThread:9491 [interfaces.py:finish():202] Joined memory monitor
+2023-09-26 18:42:03,317 INFO    HandlerThread:9491 [interfaces.py:finish():202] Joined network monitor
+2023-09-26 18:42:03,317 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:03,317 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 2
+2023-09-26 18:42:03,317 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 3
+2023-09-26 18:42:03,317 DEBUG   SenderThread:9491 [sender.py:send():380] send: stats
+2023-09-26 18:42:03,318 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:03,318 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-26 18:42:03,318 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:03,318 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 3
+2023-09-26 18:42:03,318 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 4
+2023-09-26 18:42:03,318 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:03,318 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-26 18:42:03,318 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:03,318 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 4
+2023-09-26 18:42:03,318 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 5
+2023-09-26 18:42:03,318 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:03,318 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-26 18:42:03,318 DEBUG   SenderThread:9491 [sender.py:send():380] send: summary
+2023-09-26 18:42:03,318 INFO    SenderThread:9491 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-09-26 18:42:03,318 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:03,318 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 5
+2023-09-26 18:42:03,318 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 6
+2023-09-26 18:42:03,318 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:03,318 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-26 18:42:03,319 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:03,319 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 6
+2023-09-26 18:42:03,321 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:42:03,635 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 7
+2023-09-26 18:42:03,635 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:03,635 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-26 18:42:03,635 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:03,635 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 7
+2023-09-26 18:42:04,193 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/config.yaml
+2023-09-26 18:42:04,193 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/wandb-summary.json
+2023-09-26 18:42:04,290 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-26 18:42:05,193 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:42:06,682 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 8
+2023-09-26 18:42:06,682 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: poll_exit
+2023-09-26 18:42:06,682 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:06,682 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-26 18:42:06,682 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:06,683 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 8
+2023-09-26 18:42:06,683 INFO    SenderThread:9491 [job_builder.py:build():281] Attempting to build job artifact
+2023-09-26 18:42:06,683 INFO    SenderThread:9491 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-09-26 18:42:06,684 INFO    SenderThread:9491 [job_builder.py:build():369] adding wandb-job metadata file
+2023-09-26 18:42:06,694 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 9
+2023-09-26 18:42:06,694 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:06,694 DEBUG   SenderThread:9491 [sender.py:send():380] send: artifact
+2023-09-26 18:42:06,694 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-26 18:42:07,194 INFO    Thread-12 :9491 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:42:08,243 INFO    wandb-upload_1:9491 [upload_job.py:push():86] Skipped uploading /home/workfish/.local/share/wandb/artifacts/staging/tmp_mtg1ain
+2023-09-26 18:42:08,623 INFO    wandb-upload_0:9491 [upload_job.py:push():89] Uploaded file /home/workfish/.local/share/wandb/artifacts/staging/tmpvpvyvswk
+2023-09-26 18:42:09,291 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-26 18:42:11,035 INFO    SenderThread:9491 [sender.py:send_artifact():1456] sent artifact job-git_github.com_debaumann_SUIM.git_train_unet.py - {'id': 'QXJ0aWZhY3Q6NTg0NzU3OTM2', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjk5OTQzODkx', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTg0NzUwMDA3', 'versionIndex': 4}}}
+2023-09-26 18:42:11,035 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:11,035 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 9
+2023-09-26 18:42:11,036 INFO    SenderThread:9491 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-09-26 18:42:11,195 INFO    SenderThread:9491 [dir_watcher.py:finish():388] scan: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files
+2023-09-26 18:42:11,195 INFO    SenderThread:9491 [dir_watcher.py:finish():402] scan save: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/wandb-summary.json wandb-summary.json
+2023-09-26 18:42:11,195 INFO    SenderThread:9491 [dir_watcher.py:finish():402] scan save: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/config.yaml config.yaml
+2023-09-26 18:42:11,195 INFO    SenderThread:9491 [dir_watcher.py:finish():402] scan save: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/requirements.txt requirements.txt
+2023-09-26 18:42:11,197 INFO    SenderThread:9491 [dir_watcher.py:finish():402] scan save: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/wandb-metadata.json wandb-metadata.json
+2023-09-26 18:42:11,197 INFO    SenderThread:9491 [dir_watcher.py:finish():402] scan save: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/conda-environment.yaml conda-environment.yaml
+2023-09-26 18:42:11,197 INFO    SenderThread:9491 [dir_watcher.py:finish():402] scan save: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log output.log
+2023-09-26 18:42:11,197 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 10
+2023-09-26 18:42:11,200 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:11,201 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 10
+2023-09-26 18:42:11,203 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:11,203 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 10
+2023-09-26 18:42:11,203 INFO    SenderThread:9491 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-26 18:42:11,610 INFO    wandb-upload_1:9491 [upload_job.py:push():131] Uploaded file /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/wandb-summary.json
+2023-09-26 18:42:11,654 INFO    wandb-upload_0:9491 [upload_job.py:push():131] Uploaded file /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/config.yaml
+2023-09-26 18:42:11,694 INFO    wandb-upload_4:9491 [upload_job.py:push():131] Uploaded file /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/output.log
+2023-09-26 18:42:11,697 INFO    wandb-upload_3:9491 [upload_job.py:push():131] Uploaded file /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/conda-environment.yaml
+2023-09-26 18:42:11,711 INFO    wandb-upload_2:9491 [upload_job.py:push():131] Uploaded file /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/files/requirements.txt
+2023-09-26 18:42:11,911 INFO    Thread-11 :9491 [sender.py:transition_state():613] send defer: 11
+2023-09-26 18:42:11,911 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:11,911 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 11
+2023-09-26 18:42:11,911 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:11,911 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 11
+2023-09-26 18:42:11,911 INFO    SenderThread:9491 [file_pusher.py:join():181] waiting for file pusher
+2023-09-26 18:42:11,911 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 12
+2023-09-26 18:42:11,912 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:11,912 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 12
+2023-09-26 18:42:11,912 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: status_report
+2023-09-26 18:42:11,912 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:11,912 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 12
+2023-09-26 18:42:11,912 INFO    SenderThread:9491 [file_stream.py:finish():595] file stream finish called
+2023-09-26 18:42:12,120 INFO    SenderThread:9491 [file_stream.py:finish():599] file stream finish is done
+2023-09-26 18:42:12,120 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 13
+2023-09-26 18:42:12,120 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:12,120 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 13
+2023-09-26 18:42:12,120 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:12,120 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 13
+2023-09-26 18:42:12,121 INFO    SenderThread:9491 [sender.py:transition_state():613] send defer: 14
+2023-09-26 18:42:12,121 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: defer
+2023-09-26 18:42:12,121 INFO    HandlerThread:9491 [handler.py:handle_request_defer():170] handle defer: 14
+2023-09-26 18:42:12,121 DEBUG   SenderThread:9491 [sender.py:send():380] send: final
+2023-09-26 18:42:12,121 DEBUG   SenderThread:9491 [sender.py:send():380] send: footer
+2023-09-26 18:42:12,121 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: defer
+2023-09-26 18:42:12,121 INFO    SenderThread:9491 [sender.py:send_request_defer():609] handle sender defer: 14
+2023-09-26 18:42:12,121 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-26 18:42:12,121 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: poll_exit
+2023-09-26 18:42:12,121 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: server_info
+2023-09-26 18:42:12,122 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: get_summary
+2023-09-26 18:42:12,122 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: server_info
+2023-09-26 18:42:12,123 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: sampled_history
+2023-09-26 18:42:12,123 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-26 18:42:12,124 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: job_info
+2023-09-26 18:42:12,341 DEBUG   SenderThread:9491 [sender.py:send_request():407] send_request: job_info
+2023-09-26 18:42:12,341 INFO    MainThread:9491 [wandb_run.py:_footer_history_summary_info():3554] rendering history
+2023-09-26 18:42:12,341 INFO    MainThread:9491 [wandb_run.py:_footer_history_summary_info():3586] rendering summary
+2023-09-26 18:42:12,342 INFO    MainThread:9491 [wandb_run.py:_footer_sync_info():3513] logging synced files
+2023-09-26 18:42:12,342 DEBUG   HandlerThread:9491 [handler.py:handle_request():144] handle_request: shutdown
+2023-09-26 18:42:12,342 INFO    HandlerThread:9491 [handler.py:finish():844] shutting down handler
+2023-09-26 18:42:13,124 INFO    WriterThread:9491 [datastore.py:close():294] close: /home/workfish/SUIM/wandb/run-20230926_183534-s2zdvorj/run-s2zdvorj.wandb
+2023-09-26 18:42:13,341 INFO    SenderThread:9491 [sender.py:finish():1534] shutting down sender
+2023-09-26 18:42:13,341 INFO    SenderThread:9491 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-26 18:42:13,341 INFO    SenderThread:9491 [file_pusher.py:join():181] waiting for file pusher

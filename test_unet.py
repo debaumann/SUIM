@@ -33,10 +33,11 @@ if not exists(RI_dir): os.makedirs(RI_dir)
 
 ## input/output shapes
 im_res_ = (320, 240, 3) 
-ckpt_name = "unet_rgb5.hdf5"
-model = UNet0(input_size=(im_res_[1], im_res_[0], 3), no_of_class=5)
+ckpt_name = "unet_ba_27.09.hdf5"
+model = UNet0(input_size=(im_res_[1], im_res_[0], 3), no_of_class=2)
 print (model.summary())
-model.load_weights(join("ckpt/saved/", ckpt_name))
+model.load_weights(join("ckpt/", ckpt_name))
+model.save("models/unet_ba.h5")
 
 
 im_h, im_w = im_res_[1], im_res_[0]
